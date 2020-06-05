@@ -2,7 +2,15 @@ import * as firebase from 'firebase/app';
 import 'firebase/firebase-firestore';
 import 'firebase/firebase-analytics';
 
+
+import flatpickr from "flatpickr";
+import '../../../node_modules/flatpickr/dist/flatpickr.min.css'
+
 window.addEventListener('load', () => {
+
+    // Initialise datepicker
+    flatpickr(".flatpickr");
+
     const dateFirestore = firebase.firestore().collection('date');
 
     // Section
@@ -55,11 +63,8 @@ window.addEventListener('load', () => {
             radioValueFirebase = false
         }
 
-
         if (dateConcertValue.length <= 0) {
-            dateConcertInput.style.border = '1px solid red'
-            dateConcertInput.placeholder = 'Veuillez remplir ce champ'
-            err.push(dateConcertValue)
+           
         } else {
             dateConcertInput.style.border = '1px solid black'
         }
@@ -147,8 +152,6 @@ window.addEventListener('load', () => {
         })
         formToAppend.innerHTML = displayDate;
     })
-
-
 
 })
 

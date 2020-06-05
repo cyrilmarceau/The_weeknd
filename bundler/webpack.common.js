@@ -27,7 +27,7 @@ module.exports = {
                 filename: 'admin.html',
                 template: path.resolve(__dirname, '../src/admin.html'),
                 chunks: ['index'],
-                minify: true
+                minify: false
             }),
 
             new MiniCssExtractPlugin()

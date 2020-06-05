@@ -3,8 +3,17 @@ import 'firebase/firebase-auth';
 import 'firebase/firebase-firestore';
 import 'firebase/firebase-analytics';
 
+import flatpickr from "flatpickr";
+import '../../../node_modules/flatpickr/dist/flatpickr.min.css'
+
 
 window.addEventListener('load', () => {
+
+        // Initialise datepicker
+        flatpickr(".flatpickre", {
+            dateFormat: "d-m-Y",
+            time_24hr: true
+        });
 
     // Firebase
     const dateFirestore = firebase.firestore().collection('date');
@@ -67,7 +76,9 @@ window.addEventListener('load', () => {
 
 
                 createLabel("label", "Date du concert", document.querySelector('.ctnr-1'))
-                createEl("input", "type", "text", "date du concert", doc.data().dateConcert, "date-concert-edit", document.querySelector('.ctnr-1'))
+                document.querySelector('.date-concert-edit').value = doc.data().dateConcert
+                // createEl("input", "type", "text", "date du concert", doc.data().dateConcert, "date-concert-edit", document.querySelector('.ctnr-1'))
+                // createEl("input", "type", "text", "date du concert", doc.data().dateConcert, "date-concert-edit", document.querySelector('.ctnr-1'))
 
                 createLabel("label", "Nom de la ville", document.querySelector('.ctnr-2'))
                 createEl("input", "type", "text", "Nom de la ville", doc.data().cityName, "city-name-edit", document.querySelector('.ctnr-2'))
@@ -119,15 +130,29 @@ window.addEventListener('load', () => {
     formEdit.addEventListener('submit', (event) => {
         event.preventDefault();
 
+        const err = []
+
+
         // Get new value for input
-        const newDateConcertEdit = document.querySelector('.date-concert-edit').value
-        const newCityNameEdit = document.querySelector('.city-name-edit').value
-        const newCountryNameEdit = document.querySelector('.country-name-edit').value
-        const newPlaceFestivalNameEdit = document.querySelector('.place-festival-name-edit').value
-        const newRadioValue = document.querySelector('input[name="namee"]:checked')
+        const newDateConcertEdit = document.querySelector('.date-concert-edit');
+        const newDateConcertEditValue = document.querySelector('.date-concert-edit').value
+
+        const newCityNameEdit = document.querySelector('.city-name-edit');
+        const newCityNameEditValue = document.querySelector('.city-name-edit').value
+
+
+        const newCountryNameEdit = document.querySelector('.country-name-edit');
+        const newCountryNameEditValue = document.querySelector('.country-name-edit').value
+
+
+        const newPlaceFestivalNameEdit = document.querySelector('.place-festival-name-edit');
+        const newPlaceFestivalNameEditValue = document.querySelector('.place-festival-name-edit').value
+
+
+        const newRadioEditValue = document.querySelector('input[name="namee"]:checked');
 
         // Get radio for comparate and update good value
-        let classRadio = newRadioValue.className
+        let classRadio = newRadioEditValue.className
         let newRadioValueFirebase;
 
         if (classRadio == 'edit-is-complet-true') {
@@ -137,24 +162,58 @@ window.addEventListener('load', () => {
             newRadioValueFirebase = false
         }
 
+        if (newDateConcertEditValue.length <= 0) {
+            newDateConcertEdit.style.border = '1px solid red'
+            newDateConcertEdit.placeholder = 'Veuillez remplir ce champ'
+            err.push(newDateConcertEditValue)
+        } else {
+            newDateConcertEdit.style.border = '1px solid black'
+        }
 
-        // Update in firebase
-        dateFirestore.doc(elToUpdate).update({
-            dateConcert: newDateConcertEdit,
-            cityName: newCityNameEdit,
-            countryName: newCountryNameEdit,
-            placeFestivalName: newPlaceFestivalNameEdit,
-            isComplete: newRadioValueFirebase
-        })
+        if (newCityNameEditValue.length <= 0) {
+            newCityNameEdit.style.border = '1px solid red'
+            newCityNameEdit.placeholder = 'Veuillez remplir ce champ'
+            err.push(newCityNameEditValue)
+        } else {
+            newCityNameEdit.style.border = '1px solid black'
+        }
 
-        ctnrForm.style.display = 'none'
-        crud.style.filter = "brightness(1)"
-        while (document.querySelector('.ctnr-1').firstChild) { document.querySelector('.ctnr-1').removeChild(document.querySelector('.ctnr-1').lastChild); }
-        while (document.querySelector('.ctnr-2').firstChild) { document.querySelector('.ctnr-2').removeChild(document.querySelector('.ctnr-2').lastChild); }
-        while (document.querySelector('.ctnr-3').firstChild) { document.querySelector('.ctnr-3').removeChild(document.querySelector('.ctnr-3').lastChild); }
-        while (document.querySelector('.ctnr-4').firstChild) { document.querySelector('.ctnr-4').removeChild(document.querySelector('.ctnr-4').lastChild); }
-        while (document.querySelector('.ctnr-5').firstChild) { document.querySelector('.ctnr-5').removeChild(document.querySelector('.ctnr-5').lastChild); }
-        while (document.querySelector('.ctnr-6').firstChild) { document.querySelector('.ctnr-6').removeChild(document.querySelector('.ctnr-6').lastChild); }
+        if (newCountryNameEditValue.length <= 0) {
+            newCountryNameEdit.style.border = '1px solid red'
+            newCountryNameEdit.placeholder = 'Veuillez remplir ce champ'
+            err.push(newCountryNameEditValue)
+        } else {
+            newCountryNameEdit.style.border = '1px solid black'
+        }
+
+        if (newPlaceFestivalNameEditValue.length <= 0) {
+            newPlaceFestivalNameEdit.style.border = '1px solid red'
+            newPlaceFestivalNameEdit.placeholder = 'Veuillez remplir ce champ'
+            err.push(newPlaceFestivalNameEditValue)
+        } else {
+            newPlaceFestivalNameEdit.style.border = '1px solid black'
+        }
+
+
+        if (err.length === 0) {
+            // Update in firebase
+            dateFirestore.doc(elToUpdate).update({
+                dateConcert: newDateConcertEditValue,
+                cityName: newCityNameEditValue,
+                countryName: newCountryNameEditValue,
+                placeFestivalName: newPlaceFestivalNameEditValue,
+                isComplete: newRadioValueFirebase
+            })
+
+            ctnrForm.style.display = 'none'
+            crud.style.filter = "brightness(1)"
+            while (document.querySelector('.ctnr-1').firstChild) { document.querySelector('.ctnr-1').removeChild(document.querySelector('.ctnr-1').lastChild); }
+            while (document.querySelector('.ctnr-2').firstChild) { document.querySelector('.ctnr-2').removeChild(document.querySelector('.ctnr-2').lastChild); }
+            while (document.querySelector('.ctnr-3').firstChild) { document.querySelector('.ctnr-3').removeChild(document.querySelector('.ctnr-3').lastChild); }
+            while (document.querySelector('.ctnr-4').firstChild) { document.querySelector('.ctnr-4').removeChild(document.querySelector('.ctnr-4').lastChild); }
+            while (document.querySelector('.ctnr-5').firstChild) { document.querySelector('.ctnr-5').removeChild(document.querySelector('.ctnr-5').lastChild); }
+            while (document.querySelector('.ctnr-6').firstChild) { document.querySelector('.ctnr-6').removeChild(document.querySelector('.ctnr-6').lastChild); }
+        }
 
     })
 

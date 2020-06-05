@@ -78,6 +78,8 @@ input[type="text"]{
     width: 90%;
     margin: 0 auto;
     padding: 30px 0;
+    overflow-y: scroll;
+    max-height: 80vh;
 }
 
 #ctnr-date{
@@ -169,9 +171,21 @@ table{
     margin: 10px auto;
 }
 
+.ctnr input{
+    border: 1px solid black;
+}
+
 label{
     margin-bottom: 5px;
     color: #435d7d;
+}
+
+.ctnr-1{
+    margin-bottom: 5px;
+}
+
+.ctnr-1 + .ctnr{
+    margin-top: 0;
 }
 
 /* input{
@@ -207,6 +221,10 @@ label{
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
+}
+
+.submit-cancel input{
+    cursor: pointer;
 }
 
 .submit-cancel input[type="button"]{

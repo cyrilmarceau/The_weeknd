@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "event-site",
   "version": "1.0.0",
-  "description": "portfolio-marceau-cyril",
+  "description": "Site événementielle pour promouvoir l'album after hour de The Weeknd",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cyriil77/portfolio.git"
+    "url": "git+https://github.com/Cyriil77/The_weeknd.git"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,7 @@
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "firebase": "^7.14.6",
+    "flatpickr": "^4.6.3",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",

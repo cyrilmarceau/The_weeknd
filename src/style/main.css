@@ -1,0 +1,37 @@
+/* body{
+    margin: 0;
+    padding: 0;
+}
+
+thead tr{
+    display: flex;
+}
+
+tbody tr{
+    border: 1px solid black;
+    display: flex;
+}
+
+td, th{
+    width: 16.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input[type="button"]{
+    width: 20%;
+}
+
+#add-date{
+    display: none;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 50px;
+} */

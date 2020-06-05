@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat/subset-Montserrat-Bold.woff2') format('woff2'),
+        url('../font/montserrat/subset-Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat/subset-Montserrat-Regular.woff2') format('woff2'),
+        url('../font/montserrat/subset-Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+*{
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+h1{
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+/* Section */
+#crud{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Ctnr array and title */
+.ctnr-array-crud{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Header array */
+.title-add-date{
+    width: calc(100% - 10%);
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #435d7d;
+}
+
+input{
+    padding: 8px;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="text"]{
+    cursor: text;
+}
+
+/* CRUD */
+
+.ctnr-date{
+    width: 100%;
+}
+
+.test{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#ctnr-date{
+    width: 100%;
+}
+
+/* #ctnr-date thead tr{
+    border-bottom: 2px solid black;
+    display: flex;
+} */
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: #566787
+}
+
+#ctnr-date th{
+    text-align: left;
+    border-bottom: 2px solid #566787;
+    border-collapse: separate;
+    width: 14.2%;
+    padding: 10px 0;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.row-class{
+    border-bottom: 1px solid #ddd;
+}
+
+.row-class td{
+    padding: 10px 0;
+    width: 14.2%;
+}
+
+
+.fa-edit{
+    color: orange;
+    cursor: pointer;
+}
+
+.fa-trash-alt{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+/* Add date */
+
+/* Global ctnr add date */
+.add-date, .edit-date{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+}
+
+/* Form add date */
+#add-date, #edit-date{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+/* Header form */
+.title-form{
+    border-bottom: 1px solid grey;
+}
+
+.title-form h3{
+    width: 80%;
+    margin: 15px auto;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #435d7d;
+}
+
+/* Div for label and input */
+.ctnr{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+label{
+    margin-bottom: 5px;
+    color: #435d7d;
+}
+
+/* input{
+    padding: 8px;
+    border: 1px solid grey;
+    outline: none;
+} */
+
+/* Div radio */
+.verify-complet{
+    display: flex;
+    align-items: center;
+}
+
+.verify-complet label{
+    margin-bottom: 0;
+}
+
+/* Div footer add dates */
+.btn-send-back-form{
+    background-color: #ecf0f1;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0;
+    border-top: 2px solid grey;
+}
+
+.submit-cancel{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-cancel input[type="button"]{
+    margin-right: 15px;
+}

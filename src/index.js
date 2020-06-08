@@ -17,6 +17,4 @@ import './js/firebase/editDate.js'
 // Delete date to firebase
 import './js/firebase/deleteDate.js'
 
-import './style/main.css'
-
 import './style/admin.css'

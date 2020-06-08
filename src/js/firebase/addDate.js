@@ -9,7 +9,10 @@ import '../../../node_modules/flatpickr/dist/flatpickr.min.css'
 window.addEventListener('load', () => {
 
     // Initialise datepicker
-    flatpickr(".flatpickr");
+    flatpickr(".flatpickr", {
+        dateFormat: "d-m-Y",
+        time_24hr: true
+    });
 
     const dateFirestore = firebase.firestore().collection('date');
 

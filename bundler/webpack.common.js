@@ -6,7 +6,9 @@ const path = require('path')
 module.exports = {
     entry:
     {
-        index: path.resolve(__dirname, '../src/index.js')
+        index: path.resolve(__dirname, '../src/index.js'),
+        page: path.resolve(__dirname, '../src/page.js'),
+        video: path.resolve(__dirname, '../src/video.js')
     },
     output:
     {
@@ -17,12 +19,24 @@ module.exports = {
     plugins:
         [
             new CopyWebpackPlugin([{ from: path.resolve(__dirname, '../static') }]),
+
+            // Index.html
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 template: path.resolve(__dirname, '../src/index.html'),
-                chunks: ['index'],
+                chunks: ['page'],
                 minify: true
             }),
+
+            // video.html
+            new HtmlWebpackPlugin({
+                filename: 'video.html',
+                template: path.resolve(__dirname, '../src/video.html'),
+                chunks: ['video'],
+                minify: true
+            }),
+
+            // Admin.html
             new HtmlWebpackPlugin({
                 filename: 'admin.html',
                 template: path.resolve(__dirname, '../src/admin.html'),

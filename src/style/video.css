@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat/subset-Montserrat-Bold.woff2') format('woff2'),
+        url('../font/montserrat/subset-Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat/subset-Montserrat-Regular.woff2') format('woff2'),
+        url('../font/montserrat/subset-Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Menu */
+header{
+    background-color: white;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.menu-desktop{
+    height: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-desktop img{
+    width: 5%;
+}
+
+/* Ctnr video */
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+  }
+
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    height: 10px;
+    width: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+/* Div */
+.ctnr-video{
+    position: relative;
+    height: 500px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+
+
+.reveal{
+    opacity: 0;
+}
+
+.reveal.revealed{
+    opacity: 1;
+    transition: opacity 0.5s;
+    will-change: opacity;
+}
+
+.ctnr-video p{
+    font-size: 70px;
+    margin: 0;
+    mix-blend-mode: difference;
+    position: absolute;
+    z-index: 5;
+    color: #efefef;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.ctnr-video img{
+    width: 80%;
+    position: relative;
+    /* object-fit: cover; */
+    top: 40px;
+    left: 10%;
+    z-index: 2;
+}
+
+.isActive{
+    transition: all .3s ease-in-out;
+    transform: perspective(30px) translateZ(1px);
+}
+
+.isNotActive{
+    transition: all .3s ease-in-out;
+    transform: perspective(0px) translateZ(0px);
+}
+
+footer{
+    margin-bottom: 100px;
+}
+
+.ctnr-social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    color: white;
+    font-size: 2rem;
+}

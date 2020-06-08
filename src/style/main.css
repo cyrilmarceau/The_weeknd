@@ -1,37 +1,50 @@
-/* body{
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat/subset-Montserrat-Bold.woff2') format('woff2'),
+        url('../font/montserrat/subset-Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat/subset-Montserrat-Regular.woff2') format('woff2'),
+        url('../font/montserrat/subset-Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
     margin: 0;
     padding: 0;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
 }
 
-thead tr{
-    display: flex;
+*{
+    font-family: Montserrat;
+    font-weight: normal;
 }
 
-tbody tr{
-    border: 1px solid black;
-    display: flex;
+.image{
+    background-color: red;
+    margin: 350px 0 350px 0px;
+    position: relative;
 }
 
-td, th{
-    width: 16.6%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-input[type="button"]{
+.image img{
     width: 20%;
+    z-index: 2;
+    position: absolute;
 }
 
-#add-date{
-    display: none;
-    flex-direction: column;
-    width: 30%;
-    margin-bottom: 50px;
-} */
+
+.image p{
+    position: absolute;
+    font-size: 70px;
+    top: -50px;
+    mix-blend-mode: difference;
+    z-index: 15;
+    margin: 0;
+}

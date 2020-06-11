@@ -3,17 +3,21 @@ import 'firebase/firebase-auth';
 import 'firebase/firebase-firestore';
 import 'firebase/firebase-analytics';
 
+// Datepicker
 import flatpickr from "flatpickr";
+import { French } from "flatpickr/dist/l10n/fr.js"
 import '../../../node_modules/flatpickr/dist/flatpickr.min.css'
-
 
 window.addEventListener('load', () => {
 
-        // Initialise datepicker
-        flatpickr(".flatpickre", {
-            dateFormat: "d-m-Y",
-            time_24hr: true
-        });
+    // Initialise datepicker
+    flatpickr(".flatpickre", {
+        "locale": French,
+        dateFormat: "d-m-Y",
+        time_24hr: true,
+    });
+
+
 
     // Firebase
     const dateFirestore = firebase.firestore().collection('date');

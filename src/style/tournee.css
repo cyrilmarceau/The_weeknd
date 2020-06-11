@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/montserrat/subset-Montserrat-Bold.woff2') format('woff2'),
@@ -20,45 +18,24 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(../images/noise.png);
+}
+
+*{
+    font-family: "Montserrat";
+    font-weight: normal;
 }
 
 a.active{
     color: #dd453e;
 }
 
-/* width */
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: white;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb{
-    background: #dd453e;
-    height: 10px;
-    width: 50px;
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover{
-    background: #b30000; 
-}
-
 /* Menu */
 header{
-    background-color: white;
+    background-color: black;
     /* height: 80px; */
-    margin-bottom: 100px;
-}
-
-.menu-desktop{
-    height: 100%;
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    /* margin-bottom: 100px; */
 }
 
 header h1{
@@ -84,123 +61,95 @@ header ul{
 
 header a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "Montserrat";
     font-weight: normal;
     padding: 10px;
 }
 
-header a:hover{
-    border-bottom: 1px solid black;
-}
-
-/* Icon menu burger */
 .fas{
     display: none;
 }
 
-
-/* .menu-desktop img{
-    width: 5%;
-} */
-
-
-/* Ttile page video */
-.video{
-    width: 90%;
-    color: white;
-    font-family: "Montserrat";
-    font-weight: bold;
-    /* margin-bottom: 100px; */
-    margin: 0 auto 100px;
-    font-size: 50px;
+header a:hover{
+    border-bottom: 1px solid white;
 }
 
-/* Ctnr video */
-main{
-    width: 90%;
-    margin: 0 auto;
+
+.menu-desktop{
+    height: 100%;
+    padding: 20px 50px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 
-/* Div */
-.ctnr-video{
-    width: 50%;
-    position: relative;
-    height: 500px;
-    /* margin-bottom: 100px; */
-    overflow: hidden;
+/* Display date */
+.display-date{
+    /* border: 1px solid red; */
 }
 
-/* Animation image */
-.reveal{
-    opacity: 0;
+#ctnr-date{
+    width: 80%;
+    margin: 40px auto;
 }
 
-.reveal.revealed{
-    opacity: 1;
-    transition: opacity 0.5s;
-    will-change: opacity;
-}
-
-.ctnr-video p{
-    font-size: 50px;
-    margin: 0;
-    mix-blend-mode: difference;
-    position: absolute;
-    z-index: 5;
-    color: #efefef;
-    text-transform: uppercase;
+#ctnr-date th{
+    text-align: left;
+    border-bottom: 2px solid #566787;
+    border-collapse: separate;
+    width: 14.2%;
+    padding: 10px 0;
     font-family: Montserrat;
     font-weight: bold;
 }
 
-.ctnr-video img{
-    width: 80%;
-    position: relative;
-    /* object-fit: cover; */
-    top: 30px;
-    left: 10%;
-    z-index: 2;
+.row-class td{
+    padding: 10px 0;
+    width: 14.2%;
+    color: #dd453e;
 }
 
-.iframe{
-    display: none;
-    position: fixed;
-    top: 20%;
-    left: 20%;
-    z-index: 100;
+.row-class td:nth-child(1){
+    width: 10%;
+}
+.row-class td:nth-child(2){
+    width: 15%;
+}
+.row-class td:nth-child(3){
+    width: 10%;
+}
+.row-class td:nth-child(4){
+    width: 20%;
+}
+.row-class td:nth-child(5){
+    width: 10%;
 }
 
-.iframe i{
-    color: white;
-    position: absolute;
-    right: 0px;
-    top: 13px;
-    cursor: pointer;
-    font-size: 25px;
+
+.row-class td:nth-child(2), .row-class td:nth-child(3), .row-class td:nth-child(5){
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: bold;
 }
 
-/* .video-iframe{
-    display: none;
-} */
 
-/* Animation texte */
-.isActive{
-    transition: all .3s ease-in-out;
-    transform: perspective(30px) translateZ(1px);
-}
 
-.isNotActive{
-    transition: all .3s ease-in-out;
-    transform: perspective(0px) translateZ(0px);
-}
+
+
+
+
+
+
+
+
+/* Footer */
 
 footer{
-    background-color: white;
-    /* height: 300px; */
+    background-color: #F1F1F1;
+    height: 300px;
 }
 
 .ctnr-social-media{

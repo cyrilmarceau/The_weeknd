@@ -30,26 +30,6 @@
         display: block;
     }
 
-    /* Ctnr video main section */
-    .ctnr-video{
-        width: 100%;
-        height: 200px;
-        margin-bottom: 50px;
-    }
-
-    .ctnr-video p {
-        font-size: 25px;
-    }
-
-    .ctnr-video img{
-        top: 15px;
-    }
-
-    .iframe{
-        top: 35%;
-        left: 17%;
-    }
-
 
     /* Footer */
 
@@ -70,10 +50,13 @@
     .social-menu a, .social-menu p{
         font-size: 14px;
     }
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* Menu */
     header{
         margin-bottom: 50px;
     }
@@ -95,29 +78,13 @@
         display: block;
     }
 
-    .ctnr-video{
-        width: 100%;
-        height: 250px;
-        margin-bottom: 50px;
-    }
 
-    .ctnr-video p {
-        font-size: 35px;
-    }
 
-    .ctnr-video img{
-        top: 20px;
-    }
-
-    .iframe{
-        top: 40%;
-        left: 9%;
-    }
 
     /* Footer */
 
-    .ctnr-social-media h2, .menu-desktop h1 {
-        font-size: 30px;
+    .ctnr-social-media h2 {
+        font-size: 35px;
     }
 
     .ctnr{
@@ -137,6 +104,8 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Menu */
     header{
         margin-bottom: 50px;
     }
@@ -160,31 +129,9 @@
         display: block;
     }
 
-    .ctnr-video{
-        width: 100%;
-        height: 250px;
-        margin-bottom: 70px;
-    }
 
-    .ctnr-video p {
-        font-size: 50px;
-    }
-
-    .ctnr-video img{
-        top: 30px;
-    }
-
-    .iframe{
-        top: 28%;
-        left: 14%;
-    }
 
     /* Footer */
-
-    .ctnr-social-media h2, .menu-desktop h1 {
-        font-size: 35px;
-    }
-
     .ctnr{
         flex-direction: column;
         padding: 0 40%;
@@ -198,7 +145,6 @@
     .social-menu a, .social-menu p{
         font-size: 18px;
     }
-
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -208,25 +154,4 @@
         margin-bottom: 50px;
     }
 
-    .ctnr-video{
-        /* height: 250px; */
-        margin-bottom: 90px;
-    }
-
-    .ctnr-video p {
-        font-size: 40px;
-    }
-
-    .ctnr-video img{
-        top: 23px;
-    }
-
-    .iframe{
-        left: 12%;
-    }
-/* 
-    .videoo{
-        width: 756px;
-        height: 238px;
-    } */
 }

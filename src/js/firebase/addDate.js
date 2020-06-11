@@ -4,12 +4,14 @@ import 'firebase/firebase-analytics';
 
 
 import flatpickr from "flatpickr";
+import { French } from "flatpickr/dist/l10n/fr.js"
 import '../../../node_modules/flatpickr/dist/flatpickr.min.css'
 
 window.addEventListener('load', () => {
 
     // Initialise datepicker
     flatpickr(".flatpickr", {
+        "locale": French,
         dateFormat: "d-m-Y",
         time_24hr: true
     });

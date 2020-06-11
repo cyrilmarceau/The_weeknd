@@ -8,7 +8,8 @@ module.exports = {
     {
         index: path.resolve(__dirname, '../src/index.js'),
         page: path.resolve(__dirname, '../src/page.js'),
-        video: path.resolve(__dirname, '../src/video.js')
+        video: path.resolve(__dirname, '../src/video.js'),
+        tournee: path.resolve(__dirname, '../src/tournee.js')
     },
     output:
     {
@@ -33,6 +34,14 @@ module.exports = {
                 filename: 'video.html',
                 template: path.resolve(__dirname, '../src/video.html'),
                 chunks: ['video'],
+                minify: true
+            }),
+
+            // tournee.html
+            new HtmlWebpackPlugin({
+                filename: 'tournee.html',
+                template: path.resolve(__dirname, '../src/tournee.html'),
+                chunks: ['tournee'],
                 minify: true
             }),
 
@@ -78,7 +87,7 @@ module.exports = {
 
                 // Images
                 {
-                    test: /\.(jpg|png|gif|svg)$/,
+                    test: /\.(jpg|jpeg|png|gif|svg)$/,
                     use:
                         [
                             {

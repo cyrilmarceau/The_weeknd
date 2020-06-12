@@ -27,24 +27,250 @@ body{
     font-weight: normal;
 }
 
-.image{
-    background-color: red;
-    margin: 350px 0 350px 0px;
-    position: relative;
+a.active{
+    color: #dd453e;
 }
 
-.image img{
-    width: 20%;
-    z-index: 2;
-    position: absolute;
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
 }
 
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: #dd453e;
+    height: 10px;
+    width: 50px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #b30000; 
+}
 
-.image p{
+/* Connection */
+
+.ctnr-admin-connection .bbb{
+    display: none
+}
+
+.ctnr-conexion p{
+    color: white;
+    margin-left: 5px;
+}
+
+.ctnr-admin-connection{
+    width: 40px;
+    height: 40px;
+    background-color: #b30000;
     position: absolute;
-    font-size: 70px;
-    top: -50px;
-    mix-blend-mode: difference;
-    z-index: 15;
+    z-index: 200;
+    top: 150px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.ctnr-admin-connection i{
+    color: white;
+}
+
+.ctnr-form-admin{
+    display: none;
+}
+
+.ctnr-form-admin{
+    width: 70%;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#form input{
+    border: none;
+    margin: 10px 0;
+    padding: 8px;
+    /* border: 1px solid #b30000;
+    background-color: black; */
+}
+
+#form input:nth-child(4){
+    margin-bottom: 0;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu */
+header{
+    background-color: white;
+    /* height: 80px; */
+    margin-bottom: 100px;
+}
+
+.menu-desktop{
+    height: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header h1{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
     margin: 0;
+    margin-bottom: 10px;
+    background-image: url(../images/pageVideo/glich.jpeg);
+    background-size: auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: normal;
+    padding: 10px;
+}
+
+header a:hover{
+    border-bottom: 1px solid black;
+}
+
+/* Icon menu burger */
+.fas{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: white;
+    /* height: 300px; */
+}
+
+.ctnr-social-media{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.ctnr-social-media h2{
+    text-align: center;
+    width: 100%;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 10px;
+    background-image: url(../images/pageVideo/glich.jpeg);
+    background-size: auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* footer h3{
+    margin: 0;
+} */
+
+
+.ctnr{
+    display: flex;
+    height: 100%;
+}
+
+.ctnr a{
+    margin: 15px 0;
+}
+
+.social-media, .menu-footer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-menu{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+
+.social-menu nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.social-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 100%;
+}
+
+.social-menu li {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.social-menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+
+.social-menu p {
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
 }

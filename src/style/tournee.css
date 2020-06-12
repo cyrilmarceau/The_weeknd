@@ -27,13 +27,90 @@ body{
     font-weight: normal;
 }
 
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: #dd453e;
+    height: 10px;
+    width: 50px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #b30000; 
+}
+
 a.active{
     color: #dd453e;
 }
 
+/* Connection */
+
+.ctnr-admin-connection .bbb{
+    display: none
+}
+
+.ctnr-conexion p{
+    color: white;
+    margin-left: 5px;
+}
+
+.ctnr-admin-connection{
+    width: 40px;
+    height: 40px;
+    background-color: #b30000;
+    position: absolute;
+    z-index: 200;
+    top: 150px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.ctnr-admin-connection i{
+    color: white;
+}
+
+.ctnr-form-admin{
+    display: none;
+}
+
+.ctnr-form-admin{
+    width: 70%;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#form input{
+    border: none;
+    margin: 10px 0;
+    padding: 8px;
+    /* border: 1px solid #b30000;
+    background-color: black; */
+}
+
+#form input:nth-child(4){
+    margin-bottom: 0;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Menu */
 header{
-    background-color: black;
+    background-color: white;
     /* height: 80px; */
     /* margin-bottom: 100px; */
 }
@@ -61,7 +138,7 @@ header ul{
 
 header a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: "Montserrat";
     font-weight: normal;
     padding: 10px;
@@ -72,7 +149,7 @@ header a{
 }
 
 header a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
 
 

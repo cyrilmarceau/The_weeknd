@@ -1,0 +1,157 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* Menu */
+    header{
+        margin-bottom: 50px;
+    }
+
+    .menu-desktop{
+        flex-direction: row;
+        padding: 20px 30px;
+    }
+
+    .menu-desktop h1{
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header p{
+        letter-spacing: 0;
+        font-size: 25px;
+    }
+
+    /* Icon */
+    .topnav{
+        display: block;
+    }
+
+
+    /* Footer */
+
+    .ctnr-social-media h2 {
+        font-size: 25px;
+    }
+
+    .ctnr{
+        flex-direction: column;
+        padding: 0 40%;
+    }
+
+    .social-media, .menu-footer {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .social-menu a, .social-menu p{
+        font-size: 14px;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* Menu */
+    header{
+        margin-bottom: 50px;
+    }
+
+    .menu-desktop{
+        flex-direction: row;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header p{
+        letter-spacing: 0;
+        font-size: 30px;
+    }
+
+    .topnav{
+        display: block;
+    }
+
+
+
+
+    /* Footer */
+
+    .ctnr-social-media h2 {
+        font-size: 35px;
+    }
+
+    .ctnr{
+        flex-direction: column;
+        padding: 0 40%;
+    }
+
+    .social-media, .menu-footer {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .social-menu a, .social-menu p{
+        font-size: 16px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Menu */
+    header{
+        margin-bottom: 50px;
+    }
+
+    .menu-desktop{
+        flex-direction: row;
+    }
+
+    header p{
+        letter-spacing: 0;
+        font-size: 35px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+
+
+    .topnav{
+        display: block;
+    }
+
+
+
+    /* Footer */
+    .ctnr{
+        flex-direction: column;
+        padding: 0 40%;
+    }
+
+    .social-media, .menu-footer {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .social-menu a, .social-menu p{
+        font-size: 18px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    header{
+        margin-bottom: 50px;
+    }
+
+}

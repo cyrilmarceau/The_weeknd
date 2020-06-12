@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
             
             for (let j = 0; j < elChildren.length; j++) {
                 const element = elChildren[j];
-                console.log(element);
+                // console.log(element);
                 element.style.textDecoration = 'line-through'
             }
         }

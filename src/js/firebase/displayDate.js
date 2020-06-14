@@ -53,15 +53,15 @@ window.addEventListener('load', () => {
         for (let i = 0; i < tr.length; i++) {
             const element = tr[i];
             const elChildren = element.children
-            
+
             for (let j = 0; j < elChildren.length; j++) {
                 const element = elChildren[j];
                 // console.log(element);
                 element.style.textDecoration = 'line-through'
             }
         }
-        
-        
+
+
     }, 2000);
 
 

@@ -20,9 +20,13 @@
         display: none;
     }
 
-    header p{
-        letter-spacing: 0;
-        font-size: 25px;
+    /* header p{ */
+        /* letter-spacing: 0; */
+        /* font-size: 25px; */
+    /* } */
+
+    .ctnr-conexion p{
+        font-size: 15px;
     }
 
     /* Icon */
@@ -69,15 +73,18 @@
         display: none;
     }
 
-    header p{
-        letter-spacing: 0;
-        font-size: 30px;
-    }
+    /* header p{ */
+        /* letter-spacing: 0; */
+        /* font-size: 30px; */
+    /* } */
 
     .topnav{
         display: block;
     }
 
+    .ctnr-conexion p{
+        font-size: 15px;
+    }
 
 
 
@@ -114,15 +121,18 @@
         flex-direction: row;
     }
 
-    header p{
-        letter-spacing: 0;
-        font-size: 35px;
-    }
+    /* header p{ */
+        /* letter-spacing: 0; */
+        /* font-size: 35px; */
+    /* } */
 
     header nav{
         display: none;
     }
 
+    .ctnr-conexion p{
+        font-size: 15px;
+    }
 
 
     .topnav{

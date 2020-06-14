@@ -2,9 +2,9 @@
 @media (max-width: 575.98px) {
 
     /* Menu */
-    header{
+    /* header{
         margin-bottom: 50px;
-    }
+    } */
 
     .menu-desktop{
         flex-direction: row;
@@ -20,14 +20,30 @@
         display: none;
     }
 
-    header p{
+    /* header p{
         letter-spacing: 0;
         font-size: 25px;
-    }
+    } */
 
     /* Icon */
     .topnav{
         display: block;
+    }
+
+    #ctnr-date{
+        width: 95%;
+        padding: 0;
+    }
+
+    #ctnr-date td{
+        font-size: 9px;
+    }
+
+    .row-class td:nth-child(4) {
+        width: 5%;
+    }
+    .row-class td:nth-child(4) {
+        width: 1%;
     }
 
 
@@ -57,9 +73,9 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     /* Menu */
-    header{
+    /* header{
         margin-bottom: 50px;
-    }
+    } */
 
     .menu-desktop{
         flex-direction: row;
@@ -69,16 +85,24 @@
         display: none;
     }
 
-    header p{
+    /* header p{
         letter-spacing: 0;
         font-size: 30px;
-    }
+    } */
 
     .topnav{
         display: block;
     }
 
 
+    #ctnr-date{
+        width: 95%;
+        padding: 15px;
+    }
+
+    #ctnr-date td{
+        font-size: 12px;
+    }
 
 
     /* Footer */
@@ -106,29 +130,35 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     /* Menu */
-    header{
-        margin-bottom: 50px;
-    }
+    /* header{
+         margin-bottom: 50px;
+    } */
 
     .menu-desktop{
         flex-direction: row;
     }
 
-    header p{
+    /* header p{
         letter-spacing: 0;
         font-size: 35px;
-    }
+    } */
 
     header nav{
         display: none;
     }
 
-
-
     .topnav{
         display: block;
     }
 
+    #ctnr-date{
+        width: 95%;
+        padding: 20px;
+    }
+
+    #ctnr-date td{
+        font-size: 15px;
+    }
 
 
     /* Footer */
@@ -150,8 +180,14 @@
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-    header{
+        /* header{
         margin-bottom: 50px;
+    } */
+
+    #ctnr-date{
+        width: 95%;
+        padding: 30px;
     }
+
 
 }

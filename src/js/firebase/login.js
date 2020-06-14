@@ -9,6 +9,7 @@ gsap.registerPlugin(CSSPlugin)
 
 window.addEventListener('load', () => {
 
+    const menuDesktop = document.querySelector('#sideNavigation')
     const globalCtnr = document.querySelector('.ctnr-admin-connection')
     const faiIconConexion = document.querySelector('.ctnr-admin-connection .aaa')
     const faiIconDisconnect = document.querySelector('.ctnr-admin-connection .bbb')
@@ -31,6 +32,12 @@ window.addEventListener('load', () => {
             faiIconConexion.style.display = 'flex'
             ctnrForm.style.display = 'none'
             form.reset()
+
+            if (window.innerWidth < 991) {
+                menuDesktop.appendChild(globalCtnr)
+                globalCtnr.style.left = '34px'
+                TweenLite.to(globalCtnr, .5, {css: {top: 270}})
+            }
 
         }).catch(function (error) {
             // Handle Errors here.
@@ -64,16 +71,24 @@ window.addEventListener('load', () => {
     faiIconConexion.addEventListener('click', () => {
         console.log('click')
 
-        tl.to(globalCtnr, .5, {css: {width: 350, height: 250}})
+        if (window.innerWidth <= 400) {
+            tl.to(globalCtnr, .5, {css: {width: 250, height: 250, right: 33}})
+        } else {
+            tl.to(globalCtnr, .5, {css: {width: 350, height: 250}})
+        }
         ctnrForm.style.display = 'flex'
         tl.staggerFrom(inputForm, 1, {opacity: 0, x: 150}, 0.3);
         faiIconConexion.style.display = 'none'
+        ctnrConexion.style.display = 'none'
+
+
     })
 
     cancelBtn.addEventListener('click', () => {
 
         tl.to(globalCtnr, .5, {css: {width: 40, height: 40}})
         faiIconConexion.style.display = 'flex'
+        ctnrConexion.style.display = 'block'
         ctnrForm.style.display = 'none'
         form.reset()
     })
@@ -95,10 +110,19 @@ window.addEventListener('load', () => {
             a.innerHTML = 'Admin'
             document.querySelector('.menu-desktop a').parentNode.appendChild(a)
 
+
             TweenLite.to(globalCtnr, .5, {css: {top: 35, width: 200}})
-            ctnrConexion.appendChild(p)
             ctnrConexion.style.display = 'flex'
             ctnrConexion.style.alignItems = 'center'
+
+            ctnrConexion.appendChild(p)
+
+            if (window.innerWidth < 991) {
+                menuDesktop.appendChild(globalCtnr)
+                globalCtnr.style.left = '34px'
+                TweenLite.to(globalCtnr, .5, {css: {top: 270}})
+            }
+
 
             faiIconConexion.style.display = 'none'
             faiIconDisconnect.style.display = 'flex'

@@ -19,7 +19,6 @@ body{
     margin: 0;
     padding: 0;
     /* background-color: black; */
-    background-image: url(../images/noise.png);
 }
 
 *{
@@ -111,7 +110,7 @@ a.active{
 /* Menu */
 header{
     background-color: white;
-    /* height: 80px; */
+    /* height: 120px; */
     /* margin-bottom: 100px; */
 }
 
@@ -154,7 +153,7 @@ header a:hover{
 
 
 .menu-desktop{
-    height: 100%;
+    /* height: 100%; */
     padding: 20px 50px;
     display: flex;
     align-items: center;
@@ -162,15 +161,30 @@ header a:hover{
     flex-direction: column;
 }
 
+/* Affiche */
+.affiche{
+    height: 100vh;
+    background-image: url(../images/pageTournee/tour.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 /* Display date */
-.display-date{
-    /* border: 1px solid red; */
+/* .display-date{
+    border: 1px solid red;
+} */
+
+main{
+    background-image: url(../images/pageVideo/noise.png);
 }
 
 #ctnr-date{
     width: 80%;
-    margin: 40px auto;
+    padding: 40px;
+    margin: 0 auto;
 }
 
 #ctnr-date th{
@@ -226,7 +240,7 @@ header a:hover{
 
 footer{
     background-color: #F1F1F1;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .ctnr-social-media{

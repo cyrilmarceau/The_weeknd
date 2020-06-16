@@ -18,7 +18,7 @@
 body{
     margin: 0;
     padding: 0;
-    /* background-color: black; */
+    background-color: black;
 }
 
 *{
@@ -84,17 +84,12 @@ a.active{
 .ctnr-form-admin{
     width: 70%;
     margin: 0 auto;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 #form input{
     border: none;
     margin: 10px 0;
     padding: 8px;
-    /* border: 1px solid #b30000;
-    background-color: black; */
 }
 
 #form input:nth-child(4){
@@ -110,8 +105,15 @@ a.active{
 /* Menu */
 header{
     background-color: white;
-    /* height: 120px; */
-    /* margin-bottom: 100px; */
+}
+
+.menu-desktop{
+    /* height: 100%; */
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 header h1{
@@ -152,22 +154,15 @@ header a:hover{
 }
 
 
-.menu-desktop{
-    /* height: 100%; */
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
+
 
 /* Affiche */
 .affiche{
     height: 100vh;
-    background-image: url(../images/pageTournee/tour.jpg);
-    background-size: cover;
+    background-image: url(../images/pageTournee/tour1.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 
@@ -214,6 +209,7 @@ main{
 }
 .row-class td:nth-child(4){
     width: 20%;
+    text-transform: lowercase;
 }
 .row-class td:nth-child(5){
     width: 10%;

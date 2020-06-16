@@ -2,9 +2,6 @@
 @media (max-width: 575.98px) {
 
     /* Menu */
-    /* header{
-        margin-bottom: 50px;
-    } */
 
     .menu-desktop{
         flex-direction: row;
@@ -19,11 +16,6 @@
     header nav{
         display: none;
     }
-
-    /* header p{
-        letter-spacing: 0;
-        font-size: 25px;
-    } */
 
     /* Icon */
     .topnav{
@@ -49,7 +41,7 @@
 
     /* Footer */
 
-    .ctnr-social-media h2 {
+    .ctnr-social-media h2{
         font-size: 25px;
     }
 
@@ -73,9 +65,6 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     /* Menu */
-    /* header{
-        margin-bottom: 50px;
-    } */
 
     .menu-desktop{
         flex-direction: row;
@@ -84,11 +73,6 @@
     header nav{
         display: none;
     }
-
-    /* header p{
-        letter-spacing: 0;
-        font-size: 30px;
-    } */
 
     .topnav{
         display: block;
@@ -107,8 +91,8 @@
 
     /* Footer */
 
-    .ctnr-social-media h2 {
-        font-size: 35px;
+    .ctnr-social-media h2, .menu-desktop h1 {
+        font-size: 30px;
     }
 
     .ctnr{
@@ -130,18 +114,10 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     /* Menu */
-    /* header{
-         margin-bottom: 50px;
-    } */
 
     .menu-desktop{
         flex-direction: row;
     }
-
-    /* header p{
-        letter-spacing: 0;
-        font-size: 35px;
-    } */
 
     header nav{
         display: none;
@@ -162,6 +138,10 @@
 
 
     /* Footer */
+    .ctnr-social-media h2, .menu-desktop h1 {
+        font-size: 35px;
+    }
+
     .ctnr{
         flex-direction: column;
         padding: 0 40%;

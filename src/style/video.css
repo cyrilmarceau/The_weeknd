@@ -19,7 +19,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(17, 17, 17);
+    /* background-color: rgb(17, 17, 17); */
+    background-color: black;
 }
 
 a.active{
@@ -60,7 +61,7 @@ a.active{
 .ctnr-admin-connection{
     width: 40px;
     height: 40px;
-    background-color: #b30000;
+    background-color: #dd453e;
     position: absolute;
     z-index: 200;
     top: 150px;
@@ -82,17 +83,12 @@ a.active{
 .ctnr-form-admin{
     width: 70%;
     margin: 0 auto;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 #form input{
     border: none;
     margin: 10px 0;
     padding: 8px;
-    /* border: 1px solid #b30000;
-    background-color: black; */
 }
 
 #form input:nth-child(4){
@@ -108,7 +104,6 @@ a.active{
 /* Menu */
 header{
     background-color: white;
-    /* height: 120px; */
     margin-bottom: 100px;
 }
 
@@ -158,11 +153,6 @@ header a:hover{
 .fas{
     display: none;
 }
-
-
-/* .menu-desktop img{
-    width: 5%;
-} */
 
 
 /* Ttile page video */
@@ -249,10 +239,6 @@ main{
     font-size: 25px;
 }
 
-/* .video-iframe{
-    display: none;
-} */
-
 /* Animation texte */
 .isActive{
     transition: all .3s ease-in-out;
@@ -289,10 +275,6 @@ footer{
     -webkit-background-clip: text;
     color: transparent;
 }
-
-/* footer h3{
-    margin: 0;
-} */
 
 
 .ctnr{

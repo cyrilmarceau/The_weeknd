@@ -37,10 +37,10 @@ window.addEventListener('load', () => {
 
             displayDate += `
                     <tr id=${doc.data().isComplete} class="row-class">
-                        <td> ${doc.data().dateConcert} </td>
-                        <td> ${doc.data().cityName} </td>
-                        <td> ${doc.data().countryName} </td>
-                        <td> ${doc.data().placeFestivalName}  </td>
+                        <td class="through"> ${doc.data().dateConcert} </td>
+                        <td class="through"> ${doc.data().cityName} </td>
+                        <td class="through"> ${doc.data().countryName} </td>
+                        <td class="through"> ${doc.data().placeFestivalName}  </td>
                         <td> ${valueToDisplay}  </td>
                     </tr>
                 `
@@ -56,8 +56,12 @@ window.addEventListener('load', () => {
 
             for (let j = 0; j < elChildren.length; j++) {
                 const element = elChildren[j];
-                // console.log(element);
-                element.style.textDecoration = 'line-through'
+                console.log(element.className);
+                if (element.className == 'through') {
+                    element.style.textDecoration = 'line-through'
+                }
+                
+                
             }
         }
 

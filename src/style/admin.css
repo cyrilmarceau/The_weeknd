@@ -35,6 +35,7 @@ h1{
 #crud{
     width: 100%;
     height: 100vh;
+    margin-bottom: 100px;
 }
 
 /* Ctnr array and title */
@@ -229,4 +230,25 @@ label{
 
 .submit-cancel input[type="button"]{
     margin-right: 15px;
+}
+
+.ctnr-add-actus{
+    width: 90%;
+    /* height: 800px; */
+    margin: 0 auto;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-actus{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#add-actus input, #add-actus textarea{
+    margin: 10px 0px;
+    border-radius: 4px;
 }

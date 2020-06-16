@@ -25,25 +25,6 @@
         display: block;
     }
 
-    /* Ctnr video main section */
-    .ctnr-video{
-        width: 100%;
-        height: 200px;
-        margin-bottom: 50px;
-    }
-
-    .ctnr-video p {
-        font-size: 25px;
-    }
-
-    .ctnr-video img{
-        top: 15px;
-    }
-
-    .iframe{
-        top: 35%;
-        left: 17%;
-    }
 
 
     /* Footer */
@@ -85,24 +66,7 @@
         display: block;
     }
 
-    .ctnr-video{
-        width: 100%;
-        height: 250px;
-        margin-bottom: 50px;
-    }
 
-    .ctnr-video p {
-        font-size: 35px;
-    }
-
-    .ctnr-video img{
-        top: 20px;
-    }
-
-    .iframe{
-        top: 40%;
-        left: 9%;
-    }
 
     /* Footer */
 
@@ -142,30 +106,11 @@
         display: none;
     }
 
-
-
     .topnav{
         display: block;
     }
 
-    .ctnr-video{
-        width: 100%;
-        height: 250px;
-        margin-bottom: 70px;
-    }
 
-    .ctnr-video p {
-        font-size: 50px;
-    }
-
-    .ctnr-video img{
-        top: 30px;
-    }
-
-    .iframe{
-        top: 28%;
-        left: 14%;
-    }
 
     /* Footer */
 
@@ -195,26 +140,4 @@
     header{
         margin-bottom: 50px;
     }
-
-    .ctnr-video{
-        /* height: 250px; */
-        margin-bottom: 90px;
-    }
-
-    .ctnr-video p {
-        font-size: 40px;
-    }
-
-    .ctnr-video img{
-        top: 23px;
-    }
-
-    .iframe{
-        left: 12%;
-    }
-/* 
-    .videoo{
-        width: 756px;
-        height: 238px;
-    } */
 }

@@ -155,146 +155,42 @@ header a:hover{
     display: none;
 }
 
-.ctnr-pres-artist{
-    display: flex;
-    /* height: 100vh; */
-    position: relative;
+
+.title-actus{
+    width: 80%;
+    height: 150px;
+    background-color: red;
+    margin: 0 auto;
 }
 
-.image{
-    width: 50%;
-    height: 100vh;
-    background-image: url(../images/pageAccueil/PresArtist2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.pres-artist{
-    width: 40%;
+.img-actus{
+    width: 70%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
-.pres-artist h2{
-    position: absolute;
-    left: 40%;
-    font-size: 75px;
-    opacity: 0.3;
-    font-family: "Montserrat";
-    font-weight: bold;
-    top: 20%;
-    color: white;
-    text-transform: uppercase;
+.img-actus img{
+    width: 30%;
 }
 
-/* Problème line-height */
-.pres-artist article{
-    line-height: 2.5;
-    color: white;
-    color: #dd453e;
-    margin: 0;
-    text-align: center;
+.text-actus{
+    width: 80%;
+    margin: 0 auto;
 }
 
-#album{
-    margin-top: 50px;
-}
-
-.ctnr-picture-link{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 300px;
-}
-
-.link, .img-album{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.ctnr-picture-link a{
-    padding: 8px;
-    background-color: #dd453e;
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-}
-
-.ctnr-picture-link img{
-    width: 45%;
-}
-
-.ctnr-explication-album{
-    position: relative;
-    /* width: calc(57% - 60px); */
-    /* padding: 0 30px; */
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-}
-
-.explication-album{
-    width: 50%;
-    position: relative;
-    height: 150px;
-    top: -50px;
-    display: flex;
-    justify-content: center;
-}
-
-.ctnr-explication-album p{
+.text-actus article{
     color: white;
     text-align: center;
-    width: 60%;
 }
 
-.ctnr-explication-album span{
-    color: #dd453e;
-}
 
-.ctnr-spotify-img{
-    display: flex;
-}
 
-.spotify{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
 
-.f7{
-    display: none;
-}
 
-.img-part-1, .img-part-2{
-    position: relative;
-    width: 50%;
-    top: -80px;
-    display: flex;
-    justify-content: center;
-}
 
-.img-part-2{
-    top: -300px;
-}
 
-.ctnr-actu-img{
-    display: flex;
-}
 
-.ctnr-actu{
-    width: 50%;
-    height: 250px;
-    background-color: white;
-}
 
 
 

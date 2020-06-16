@@ -4,9 +4,7 @@ import './lib/fit.fontawesome.js'
 // Database
 import './js/firebase/database.js'
 
-// Login / disconnect
-import './js/firebase/login.js'
-import './js/firebase/disconnect.js'
+import './js/firebase/uploadActus.js'
 
 // Add date to firebase
 import './js/firebase/addDate.js'

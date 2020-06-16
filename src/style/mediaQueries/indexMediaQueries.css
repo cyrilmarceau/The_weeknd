@@ -3,7 +3,7 @@
 
     /* Menu */
     header{
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     .menu-desktop{
@@ -20,11 +20,6 @@
         display: none;
     }
 
-    /* header p{ */
-        /* letter-spacing: 0; */
-        /* font-size: 25px; */
-    /* } */
-
     .ctnr-conexion p{
         font-size: 15px;
     }
@@ -34,10 +29,72 @@
         display: block;
     }
 
+    .ctnr-pres-artist{
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+    }
+
+    .pres-artist{
+        width: 90%;
+    }
+
+    .pres-artist h2{
+        position: initial;
+        font-size: 30px;
+    }
+
+    .pres-artist article{
+        line-height: 1.5;
+        font-size: 12px;
+    }
+
+    .ctnr-picture-link{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .link{
+        margin-bottom: 20px;
+    }
+
+    .ctnr-picture-link a{
+        font-size: 12px;
+    }
+
+    .ctnr-picture-link img{
+        width: 100%;
+    }
+    
+    .explication-album{
+        position: initial;
+        margin: 0 auto;
+    }
+
+    .ctnr-explication-album p{
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .explication-album{
+        width: 90%;
+        height: auto;
+    }
+
+    .ctnr-spotify-img{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-part-1, .img-part-2{
+        position: initial;
+    }
+
 
     /* Footer */
 
-    .ctnr-social-media h2 {
+    .ctnr-social-media h2{
         font-size: 25px;
     }
 
@@ -61,8 +118,9 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     /* Menu */
+
     header{
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     .menu-desktop{
@@ -73,11 +131,6 @@
         display: none;
     }
 
-    /* header p{ */
-        /* letter-spacing: 0; */
-        /* font-size: 30px; */
-    /* } */
-
     .topnav{
         display: block;
     }
@@ -86,12 +139,72 @@
         font-size: 15px;
     }
 
+    /* Pres artist */
+    .ctnr-pres-artist{
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+    }
+
+    .pres-artist{
+        width: 90%;
+    }
+
+    .pres-artist h2{
+        position: initial;
+        font-size: 45px;
+    }
+
+    .pres-artist article{
+        line-height: 1.5;
+    }
+
+    .ctnr-picture-link{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .link{
+        margin-bottom: 20px;
+    }
+
+    .ctnr-picture-link a{
+        font-size: 15px;
+    }
+
+    .ctnr-picture-link img{
+        width: 100%;
+    }
+    
+    .explication-album{
+        position: initial;
+        margin: 0 auto;
+    }
+
+    .ctnr-explication-album p{
+        width: 80%;
+    }
+
+    .explication-album{
+        width: 90%;
+        height: auto;
+    }
+
+    .ctnr-spotify-img{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-part-1, .img-part-2{
+        position: initial;
+    }
 
 
     /* Footer */
 
-    .ctnr-social-media h2 {
-        font-size: 35px;
+    .ctnr-social-media h2, .menu-desktop h1 {
+        font-size: 30px;
     }
 
     .ctnr{
@@ -113,18 +226,14 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     /* Menu */
+
     header{
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     .menu-desktop{
         flex-direction: row;
     }
-
-    /* header p{ */
-        /* letter-spacing: 0; */
-        /* font-size: 35px; */
-    /* } */
 
     header nav{
         display: none;
@@ -139,9 +248,37 @@
         display: block;
     }
 
+    .pres-artist h2{
+        font-size: 60px;
+    }
+
+    .pres-artist article{
+        line-height: 1.5;
+    }
+
+    .ctnr-picture-link a{
+        font-size: 15px;
+    }
+
+    .ctnr-picture-link img{
+        width: 65%;
+    }
+    
+    .explication-album{
+        top: -80px;
+    }
+
+    .ctnr-explication-album p{
+        width: 80%;
+    }
+
 
 
     /* Footer */
+    .ctnr-social-media h2, .menu-desktop h1 {
+        font-size: 35px;
+    }
+
     .ctnr{
         flex-direction: column;
         padding: 0 40%;
@@ -160,8 +297,6 @@
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-    header{
-        margin-bottom: 50px;
-    }
+
 
 }

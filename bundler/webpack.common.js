@@ -9,7 +9,8 @@ module.exports = {
         index: path.resolve(__dirname, '../src/index.js'),
         page: path.resolve(__dirname, '../src/page.js'),
         video: path.resolve(__dirname, '../src/video.js'),
-        tournee: path.resolve(__dirname, '../src/tournee.js')
+        tournee: path.resolve(__dirname, '../src/tournee.js'),
+        actus: path.resolve(__dirname, '../src/actus.js')
     },
     output:
     {
@@ -42,6 +43,14 @@ module.exports = {
                 filename: 'tournee.html',
                 template: path.resolve(__dirname, '../src/tournee.html'),
                 chunks: ['tournee'],
+                minify: true
+            }),
+
+            // tournee.html
+            new HtmlWebpackPlugin({
+                filename: 'actus.html',
+                template: path.resolve(__dirname, '../src/actus.html'),
+                chunks: ['actus'],
                 minify: true
             }),
 

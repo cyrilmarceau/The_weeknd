@@ -155,33 +155,68 @@ header a:hover{
     display: none;
 }
 
+.ctnr-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
 
 .title-actus{
-    width: 80%;
-    height: 150px;
-    background-color: red;
+    width: 30%;
+    height: auto;
     margin: 0 auto;
+}
+
+.title-actus p{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 .img-actus{
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .img-actus img{
-    width: 30%;
+    width: 100%;
+}
+
+.date-actus{
+    position: absolute;
+    left: -86px;
+    top: 0;
+    width: 86px;
+    height: 86px;
+    background-color: #dd453e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date-actus p{
+    color: white;
+    margin: 0;
+}
+
+.date-actus p:nth-child(2){
+    padding: 0 15px;
+}
+.date-actus p:nth-child(3){
+    text-align: right;
 }
 
 .text-actus{
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .text-actus article{
     color: white;
-    text-align: center;
 }
 
 

@@ -16,17 +16,17 @@ window.addEventListener('load', () => {
         const uploadPicture = storageRef.child(`${document.querySelector('#actus-title').value}`).put(file);
         uploadPicture.on('state_changed', onStateChanged, onError, onComplete);
 
-        const onStateChanged = (snapshot) => {
+        function onStateChanged(snapshot){
             snapshot.state;
             snapshot.bytesTransferred;
             snapshot.totalBytes;
         }
 
-        const onError = (error) => {
+        function onError(error){
             console.error('Oops…', error);
         }
 
-        const onComplete = () => {
+        function onComplete (){
             console.log('File uploaded!');
 
             // Select form
@@ -42,13 +42,15 @@ window.addEventListener('load', () => {
                 const err = []
                 const ActusDateValue = document.querySelector('#actus-date').value
                 const ActusTitleValue = document.querySelector('#actus-title').value
-                const ActusTexteValue = document.querySelector('#actus')
+                const ActusTexteValue = document.querySelector('#actus').value
                 const ActusPictureValue = document.querySelector('#actus-picture')
 
                 const ActusDate = document.querySelector('#actus-date')
                 const ActusTitle = document.querySelector('#actus-title')
                 const ActusTexte = document.querySelector('#actus')
                 const ActusPicture = document.querySelector('#actus-picture')
+
+                console.log(ActusTexteValue)
 
                 // Upload on firebase
                 actusFirestore.doc().set({

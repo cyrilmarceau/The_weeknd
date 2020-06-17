@@ -150,8 +150,8 @@ window.addEventListener('load', () => {
                     <td> ${doc.data().countryName} </td>
                     <td> ${doc.data().placeFestivalName}  </td>
                     <td> ${valueToDisplay}  </td>
-                    <td> <i class="fas fa-edit fai-edit${doc.id}"></i> </td>
-                    <td> <i class="fas fa-trash-alt fai-delete${doc.id}"></i> </td>
+                    <td class="edit"> <i class="fas fa-edit fai-edit${doc.id}"></i> </td>
+                    <td class="delete"> <i class="fas fa-trash-alt fai-delete${doc.id}"></i> </td>
                 </tr>
                 `
         })

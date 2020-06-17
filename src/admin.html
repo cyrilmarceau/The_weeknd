@@ -4,7 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+
+    <meta itemprop="name" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+    <meta itemprop="description" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+    <meta itemprop="image" content="https://marceau-cyril.com/lab_201/social/OG-630.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+    <meta name="twitter:description" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+    <meta name="twitter:image" content="https://marceau-cyril.com/lab_201/social/OG.jpg">
+
+    <meta property="og:site_name" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marceau-cyril.com/lab_201">
+    <meta property="og:title" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+    <meta property="og:description" content="The Weeknd - site évenementielle pour la sortie de son album after hour">
+    <meta property="og:image" content="https://marceau-cyril.com/lab_201/social/OG-630.jpg">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="apple-mobile-web-app-title" content="The Weeknd">
+    <meta name="application-name" content="The Weeknd">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>THE WEEKND</title>
 </head>
 
 <body>
@@ -77,8 +109,7 @@
             <div class="ctnr">
                 <label for="">La date est-elle complète ?</label>
                 <div class="verify-complet">
-                    <label for="">Oui</label> <input type="radio" name="is-complete" checked
-                        class="complete-is-true">
+                    <label for="">Oui</label> <input type="radio" name="is-complete" checked class="complete-is-true">
                     <label for="">Non</label> <input type="radio" name="is-complete" class="complete-is-false">
                 </div>
             </div>
@@ -99,7 +130,7 @@
         <form id="edit-date">
 
             <div class="title-form">
-                <h3>Modifier une date</h3>
+                <h3>Modifier les dates de tournée de the weeknd</h3>
             </div>
 
             <div class="ctnr ctnr-1"></div>
@@ -124,15 +155,37 @@
 
     </div>
 
-    <section>
+    <section id="actus">
         <div class="ctnr-add-actus">
+
+            <div class="title-add-date">
+                <h1>Gérer les actualités de the weeknd</h1>
+                <div class="button">
+                    <a href="./index.html">Revenir</a>
+                </div>
+
+            </div>
+
             <form id="add-actus">
-                <input type="text" placeholder="Date de l'actualité" id="actus-date">
-                <input type="text" placeholder="Titre de l'actualité" id="actus-title">
-                <textarea cols="30" rows="10" id="actus" placeholder="Texte de l'actualité"></textarea>
-                <input type="file" id="actus-picture">
-                <input type="button" value="Annuler" id="actus-cancel">
-                <input type="submit" value="Envoyer" id="actus-submit">
+
+                <div class="title-form">
+                    <h3>Ajouter une actus</h3>
+                </div>
+
+                <div class="ctnr">
+                    <input type="text" placeholder="Date de l'actualité" class="flatpickr-actus" id="actus-date">
+                    <input type="text" placeholder="Titre de l'actualité" id="actus-title">
+                    <textarea cols="30" rows="10" id="actus-text" placeholder="Texte de l'actualité"></textarea>
+                    <input type="file" id="actus-picture" disabled>
+                </div>
+
+                <div class="ctnr btn-send-back-form">
+                    <div class="submit-cancel ctnr-6">
+                        <!-- <input type="button" value="Annuler" id="actus-cancel"> -->
+                        <input type="submit" value="Envoyer" id="actus-submit" disabled>
+                    </div>
+                </div>
+
             </form>
         </div>
     </section>

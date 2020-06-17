@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marceau-cyril.com/sitemap.xml
+Sitemap: https://marceau-cyril.com/lab_201/sitemap.xml

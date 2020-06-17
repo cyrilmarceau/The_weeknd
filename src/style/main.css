@@ -31,6 +31,18 @@ a.active{
     color: #dd453e;
 }
 
+.lazy-load {
+    opacity: 0;
+    /* Animation sur l'opacité en 1s */
+    transition: opacity 1s;
+    /* Préviens le navigateur que l'opacité va changer */
+    will-change: opacity;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
 /* width */
 ::-webkit-scrollbar{
     width: 10px;
@@ -47,6 +59,10 @@ a.active{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover{
     background: #b30000; 
+}
+
+::selection{
+    background: rgba(221, 69, 62, 0.3);
 }
 
 /* Connection */
@@ -91,6 +107,17 @@ a.active{
     border: none;
     margin: 10px 0;
     padding: 8px;
+}
+
+#form input[type="button"], #form input[type="submit"]{
+    width: 60%;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+::placeholder{
+    color: black;
 }
 
 #form input:nth-child(4){
@@ -164,10 +191,15 @@ header a:hover{
 .image{
     width: 50%;
     height: 100vh;
-    background-image: url(../images/pageAccueil/PresArtist2.jpg);
+    /* background-image: url(../images/pageAccueil/PresArtist2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+}
+
+.image img{
+    object-fit: contain;
+    width: 90%;
 }
 
 .pres-artist{
@@ -267,12 +299,16 @@ header a:hover{
     width: 50%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .f7{
     display: none;
 }
+
+/* .di, .b4{
+    background-color: #dd453e
+} */
 
 .img-part-1, .img-part-2{
     position: relative;
@@ -304,6 +340,7 @@ header a:hover{
 .actu-picture{
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 
 .actu-picture img{

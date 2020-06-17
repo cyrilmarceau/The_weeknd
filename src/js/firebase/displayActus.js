@@ -5,7 +5,7 @@ import 'firebase/firebase-firestore';
 window.addEventListener('load', () => {
     const actusFirestore = firebase.firestore().collection('actus');
 
-    actusFirestore.orderBy('timestamp', 'desc').get().then(function(querySnapshot){
+    actusFirestore.orderBy('timestamp', 'desc').onSnapshot(function(querySnapshot){
         querySnapshot.forEach(function(doc) {
 
             const ctnrDiv = document.createElement('div');
@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
             let pYears = document.createElement('p');
 
             let date = doc.data().dateActus;
-            let dateSplit = date.split('/');
+            let dateSplit = date.split('-');
 
             let day = dateSplit[0];
             let month = dateSplit[1];

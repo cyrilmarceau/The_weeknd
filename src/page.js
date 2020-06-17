@@ -4,6 +4,7 @@ import './js/firebase/login.js'
 import './js/firebase/disconnect.js'
 import './js/animation/animationIndex.js'
 import './js/firebase/displayActuIndex.js'
+import './style/loader.css'
 import './style/menu.css';
 import './style/main.css'
 import './style/mediaQueries/indexMediaQueries.css';

@@ -50,50 +50,41 @@ window.addEventListener('load', () => {
             }
             if (element.parentNode.parentNode.nextSibling.classList[1] == 'iframe-2') {
                 createIframe('https://www.youtube.com/embed/i58MNnk6BhY', 'videoo', document.querySelector('.iframe-2'))
-                console.log('video2')
             }
             if (element.parentNode.parentNode.nextSibling.classList[1] == 'iframe-3') {
                 createIframe('https://www.youtube.com/embed/oq9AgxHvGjw', 'videoo', document.querySelector('.iframe-3'))
-                console.log('video3')
             }
             if (element.parentNode.parentNode.nextSibling.classList[1] == 'iframe-4') {
                 createIframe('https://www.youtube.com/embed/4NRXx6U8ABQ', 'videoo', document.querySelector('.iframe-4'))
-                console.log('video4')
             }
             if (element.parentNode.parentNode.nextSibling.classList[1] == 'iframe-5') {
                 createIframe('https://www.youtube.com/embed/1DpH-icPpl0', 'videoo', document.querySelector('.iframe-5'))
-                console.log('video5')
             }
 
             if (window.innerWidth > 1200) {
-                console.log(document.querySelector('.videoo'))
                 document.querySelector('.videoo').style.width = '956px'
                 document.querySelector('.videoo').style.height = '568px'
             }
             if (window.innerWidth >= 992 && window.innerWidth <= 1199.98) {
-                console.log(document.querySelector('.videoo'))
                 document.querySelector('.videoo').style.width = '756px'
                 document.querySelector('.videoo').style.height = '468px'
             }
             if (window.innerWidth >= 768 && window.innerWidth <= 991.98) {
-                console.log(document.querySelector('.videoo'))
                 document.querySelector('.videoo').style.width = '556px'
                 document.querySelector('.videoo').style.height = '368px'
             }
             if (window.innerWidth >= 576 && window.innerWidth <= 767.98) {
-                console.log(document.querySelector('.videoo'))
                 document.querySelector('.videoo').style.width = '456px'
                 document.querySelector('.videoo').style.height = '268px'
             }
             if (window.innerWidth >= 0 && window.innerWidth <= 575.98) {
-                console.log(document.querySelector('.videoo'))
                 document.querySelector('.videoo').style.width = '356px'
                 document.querySelector('.videoo').style.height = '268px'
             }
 
 
             document.querySelectorAll('.ctnr-video').forEach(element => {
-                element.style.filter = 'blur(1px)'
+                element.style.filter = 'blur(1px) brightness(0.5)'
             })
         })
 
@@ -107,7 +98,7 @@ window.addEventListener('load', () => {
             }
 
             document.querySelectorAll('.ctnr-video').forEach(element => {
-                element.style.filter = 'blur(0px)'
+                element.style.filter = 'blur(0px) brightness(1)'
             })
         })
 
@@ -119,7 +110,7 @@ window.addEventListener('load', () => {
             }
 
             document.querySelectorAll('.ctnr-video').forEach(element => {
-                element.style.filter = 'blur(0px)'
+                element.style.filter = 'blur(0px) brightness(1)'
             })
         })
 
@@ -131,7 +122,7 @@ window.addEventListener('load', () => {
             }
 
             document.querySelectorAll('.ctnr-video').forEach(element => {
-                element.style.filter = 'blur(0px)'
+                element.style.filter = 'blur(0px) brightness(1)'
             })
         })
 
@@ -143,7 +134,7 @@ window.addEventListener('load', () => {
             }
 
             document.querySelectorAll('.ctnr-video').forEach(element => {
-                element.style.filter = 'blur(0px)'
+                element.style.filter = 'blur(0px) brightness(1)'
             })
         })
 
@@ -155,7 +146,7 @@ window.addEventListener('load', () => {
             }
 
             document.querySelectorAll('.ctnr-video').forEach(element => {
-                element.style.filter = 'blur(0px)'
+                element.style.filter = 'blur(0px) brightness(1)'
             })
         })
 

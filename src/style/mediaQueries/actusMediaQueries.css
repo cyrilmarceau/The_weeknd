@@ -2,9 +2,7 @@
 @media (max-width: 575.98px) {
 
     /* Menu */
-    header{
-        margin-bottom: 50px;
-    }
+
 
     .menu-desktop{
         flex-direction: row;
@@ -25,7 +23,31 @@
         display: block;
     }
 
+    .img-actus{
+        width: 100%;
+    }
 
+    .date-actus{
+        top: 100%;
+        left: 10%;
+    }
+
+    .title-actus{
+        width: 80%;
+        margin-top: 86px;
+    }
+
+    .title-actus p{
+        font-size: 18px;
+    }
+
+    .text-actus article{
+        font-size: 14px;
+    }
+
+    .text-actus{
+        width: 80%;
+    }
 
     /* Footer */
 
@@ -50,9 +72,8 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    header{
-        margin-bottom: 50px;
-    }
+
+    /* Menu */
 
     .menu-desktop{
         flex-direction: row;
@@ -67,6 +88,13 @@
     }
 
 
+    .title-actus p{
+        font-size: 20px;
+    }
+
+    .text-actus article{
+        font-size: 16px;
+    }
 
     /* Footer */
 
@@ -94,10 +122,6 @@
 
     /* Menu */
 
-    header{
-        margin-bottom: 50px;
-    }
-
     .menu-desktop{
         flex-direction: row;
     }
@@ -110,7 +134,13 @@
         display: block;
     }
 
+    .title-actus p{
+        font-size: 2px;
+    }
 
+    .title-actus p{
+        font-size: 25px;
+    }
 
     /* Footer */
 
@@ -139,5 +169,9 @@
 
     header{
         margin-bottom: 50px;
+    }
+
+    .title-actus p{
+        font-size: 25px;
     }
 }

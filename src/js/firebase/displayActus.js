@@ -5,7 +5,7 @@ import 'firebase/firebase-firestore';
 window.addEventListener('load', () => {
     const actusFirestore = firebase.firestore().collection('actus');
 
-    actusFirestore.get().then(function(querySnapshot){
+    actusFirestore.orderBy('timestamp', 'desc').get().then(function(querySnapshot){
         querySnapshot.forEach(function(doc) {
 
             const ctnrDiv = document.createElement('div');

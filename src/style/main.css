@@ -291,11 +291,49 @@ header a:hover{
 }
 
 .ctnr-actu{
+    width: 30%;
+    height: 400px;
+    border: 1px solid white;
+}
+
+.actu-picture-title{
+    display: flex;
+    height: 190px;
+}
+
+.actu-picture{
     width: 50%;
-    height: 250px;
+    height: 100%;
+}
+
+.actu-picture img{
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    object-position: -50px;
+}
+
+.actu-title{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: white;
 }
 
+.actu-title h3{
+    font-weight: bold;
+    margin: 0;
+}
+
+.actu-texte p{
+    color: white;
+    width: 90%;
+    text-align: left;
+    padding: 0 20px;
+    line-height: 2;
+}
 
 
 

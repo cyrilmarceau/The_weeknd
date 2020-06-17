@@ -49,6 +49,10 @@ a.active{
     background: #b30000; 
 }
 
+::selection{
+    background: rgba(221, 69, 62, 0.3);
+}
+
 /* Connection */
 
 .ctnr-admin-connection .bbb{
@@ -162,16 +166,17 @@ header a:hover{
 }
 
 .title-actus{
-    width: 30%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
 }
 
 .title-actus p{
     color: red;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .img-actus{

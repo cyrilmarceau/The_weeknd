@@ -84,6 +84,10 @@ a.active{
     display: none
 }
 
+.aaa, .bbb{
+    cursor: pointer;
+}
+
 .ctnr-conexion p{
     color: white;
     margin-left: 5px;
@@ -127,6 +131,7 @@ a.active{
     background-color: black;
     color: white;
     outline: none;
+    cursor: pointer;
 }
 
 .btn-admin{
@@ -208,7 +213,7 @@ header a:hover{
 
 .image{
     width: 50%;
-    height: 100vh;
+    /* height: 100vh; */
     /* background-image: url(../images/pageAccueil/PresArtist2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -261,6 +266,14 @@ header a:hover{
     /* height: 300px; */
 }
 
+.link{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
 .link, .img-album{
     width: 50%;
     display: flex;
@@ -275,10 +288,12 @@ header a:hover{
     padding: 15px;
     background-color: #dd453e;
     text-transform: uppercase;
-    border-radius: 4px;
     font-size: 20px;
     color: black;
     text-decoration: none;
+    /* width: 255px; */
+    margin-bottom: 35px;
+    color: white;
 }
 
 .ctnr-picture-link img{
@@ -293,20 +308,20 @@ header a:hover{
 
 .explication-album{
     width: 50%;
-    position: relative;
+    /* position: relative; */
     /* height: 150px; */
-    top: -50px;
+    /* top: -50px; */
     display: flex;
     justify-content: center;
 }
 
-.ctnr-explication-album p{
+.explication-album p{
     color: white;
     text-align: center;
-    width: 60%;
+    width: 100%;
 }
 
-.ctnr-explication-album span{
+.explication-album span{
     color: #dd453e;
 }
 
@@ -332,7 +347,7 @@ header a:hover{
 .img-part-1, .img-part-2{
     position: relative;
     width: 50%;
-    top: -80px;
+    /* top: -80px; */
     display: flex;
     justify-content: center;
 }
@@ -370,17 +385,25 @@ header a:hover{
 }
 
 .actu-title{
-    width: 50%;
+    width: calc(50% - 30px);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: white;
+    padding: 0 25px;
 }
 
 .actu-title h3{
     font-weight: bold;
     margin: 0;
+    border: 1px solid black;
+    padding: 10px;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 .actu-texte{
@@ -392,6 +415,7 @@ header a:hover{
     text-align: left;
     padding-left: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .actu-texte article{

@@ -54,6 +54,7 @@
 
     .link{
         margin-bottom: 20px;
+        width: 90%;
     }
 
     .ctnr-picture-link a{
@@ -104,6 +105,10 @@
 
     .actu-picture img{
         object-position: -15px;
+    }
+
+    article{
+        font-size: 14px;
     }
 
     /* Footer */
@@ -183,6 +188,7 @@
 
     .link{
         margin-bottom: 20px;
+        width: 80%;
     }
 
     .ctnr-picture-link a{
@@ -223,6 +229,10 @@
 
     .actu-picture img{
         object-position: -15px;
+    }
+
+    article{
+        font-size: 15px;
     }
 
     /* Footer */
@@ -295,6 +305,20 @@
 
     .img-part-1, .img-part-2{
         display: none;
+    }
+
+    .ctnr-spotify-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ctnr-actu{
+        width: 45%;
+    }
+
+    .ctnr-actu-img{
+        display: flex;
+        justify-content: center;
     }
 
     /* Footer */

@@ -48,7 +48,11 @@ a.active{
 /* Connection */
 
 .ctnr-admin-connection .bbb{
-    display: none
+    display: none;
+}
+
+.aaa, .bbb{
+    cursor: pointer;
 }
 
 .ctnr-conexion p{
@@ -105,6 +109,7 @@ a.active{
     background-color: black;
     color: white;
     outline: none;
+    cursor: pointer;
 }
 
 .btn-admin{

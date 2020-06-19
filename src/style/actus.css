@@ -61,6 +61,13 @@ a.active{
     display: none
 }
 
+
+/* Renvoyer un mail samedi vers 14 /15h pour un dernier commentaire */
+
+.aaa, .bbb{
+    cursor: pointer;
+}
+
 .ctnr-conexion p{
     color: white;
     margin-left: 5px;
@@ -109,6 +116,7 @@ a.active{
     background-color: black;
     color: white;
     outline: none;
+    cursor: pointer;
 }
 
 .btn-admin{

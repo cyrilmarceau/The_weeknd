@@ -82,5 +82,7 @@ window.addEventListener('load', () => {
     document.querySelectorAll('#reveal').forEach((r) => {
         observer.observe(r);
     })
+
+    document.querySelector('.spotify iframe').style.width = '400px'
 })
 

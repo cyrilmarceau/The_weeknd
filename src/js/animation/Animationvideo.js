@@ -87,7 +87,7 @@ window.addEventListener('load', () => {
 
 
             document.querySelectorAll('.ctnr-video').forEach(element => {
-                element.style.filter = 'blur(1px) brightness(0.5)'
+                element.style.filter = 'blur(1px) brightness(0.2)'
             })
         })
 

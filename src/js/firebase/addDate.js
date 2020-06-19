@@ -19,28 +19,28 @@ window.addEventListener('load', () => {
     const dateFirestore = firebase.firestore().collection('date');
 
     // Section
-    const crud = document.getElementById('crud')
+    const crud = document.getElementById('crud');
 
     // container div
-    const ctnrForm = document.querySelector('.add-date')
+    const ctnrForm = document.querySelector('.add-date');
 
     // Display form for add date
     document.querySelector('.display-form-add-date').addEventListener('click', () => {
-        ctnrForm.style.display = 'flex'
-        crud.style.filter = "brightness(0.5)"
+        ctnrForm.style.display = 'flex';
+        crud.style.filter = "brightness(0.5)";
     })
 
 
     // Form
-    const addDateForm = document.getElementById('add-date')
+    const addDateForm = document.getElementById('add-date');
 
     // Cancel btn
-    const backBtn = document.querySelector('.back')
+    const backBtn = document.querySelector('.back');
 
     addDateForm.addEventListener('submit', (event) => {
-        event.preventDefault()
+        event.preventDefault();
 
-        const err = []
+        const err = [];
 
         // Get all input for modify css and value of input for add
         const dateConcertInput = document.querySelector('#date-concert');
@@ -58,49 +58,49 @@ window.addEventListener('load', () => {
 
         // Verify input checked
         const radioValue = document.querySelector('input[name="is-complete"]:checked');
-        let classRadio = radioValue.className
+        let classRadio = radioValue.className;
         let radioValueFirebase;
 
         if (classRadio == 'complete-is-true') {
-            radioValueFirebase = true
+            radioValueFirebase = true;
         }
         if (classRadio == 'complete-is-false') {
-            radioValueFirebase = false
+            radioValueFirebase = false;
         }
 
         if (dateConcertValue.length <= 0) {
            
         } else {
-            dateConcertInput.style.border = '1px solid black'
+            dateConcertInput.style.border = '1px solid black';
         }
 
         if (cityNameValue.length <= 0) {
-            cityNameInput.style.border = '1px solid red'
-            cityNameInput.placeholder = 'Veuillez remplir ce champ'
-            err.push(cityNameValue)
+            cityNameInput.style.border = '1px solid red';
+            cityNameInput.placeholder = 'Veuillez remplir ce champ';
+            err.push(cityNameValue);
         } else {
-            cityNameInput.style.border = '1px solid black'
+            cityNameInput.style.border = '1px solid black';
         }
 
         if (countryNameValue.length <= 0) {
-            countryNameInput.style.border = '1px solid red'
-            countryNameInput.placeholder = 'Veuillez remplir ce champ'
-            err.push(countryNameValue)
+            countryNameInput.style.border = '1px solid red';
+            countryNameInput.placeholder = 'Veuillez remplir ce champ';
+            err.push(countryNameValue);
         } else {
-            countryNameInput.style.border = '1px solid black'
+            countryNameInput.style.border = '1px solid black';
         }
 
         if (placeFestivalNameValue.length <= 0) {
-            placeFestivalNameInput.style.border = '1px solid red'
-            placeFestivalNameInput.placeholder = 'Veuillez remplir ce champ'
-            err.push(placeFestivalNameValue)
+            placeFestivalNameInput.style.border = '1px solid red';
+            placeFestivalNameInput.placeholder = 'Veuillez remplir ce champ';
+            err.push(placeFestivalNameValue);
         } else {
-            placeFestivalNameInput.style.border = '1px solid black'
+            placeFestivalNameInput.style.border = '1px solid black';
         }
 
         // Verify if input is checked
         if (radioValue == null) {
-            err.push(radioValue)
+            err.push(radioValue);
         }
 
         if (err.length === 0) {
@@ -111,36 +111,36 @@ window.addEventListener('load', () => {
                 placeFestivalName: placeFestivalNameValue,
                 isComplete: radioValueFirebase
             });
-            ctnrForm.style.display = 'none'
-            crud.style.filter = "brightness(1)"
-            addDateForm.reset()
+            ctnrForm.style.display = 'none';
+            crud.style.filter = "brightness(1)";
+            addDateForm.reset();
         }
 
     });
 
     // Delete add date
     backBtn.addEventListener('click', () => {
-        ctnrForm.style.display = 'none'
-        crud.style.filter = "brightness(1)"
+        ctnrForm.style.display = 'none';
+        crud.style.filter = "brightness(1)";
     })
 
 
     // Append datas in tbody
-    const formToAppend = document.querySelector('#ctnr-datas-firebabse')
+    const formToAppend = document.querySelector('#ctnr-datas-firebabse');
 
 
     // Display all date
     dateFirestore.onSnapshot(function (querySnapshot) {
 
-        let displayDate = ''
-        let valueToDisplay = ''
+        let displayDate = '';
+        let valueToDisplay = '';
         querySnapshot.forEach(function (doc) {
 
             if (doc.data().isComplete == true) {
-                valueToDisplay = 'Oui'
+                valueToDisplay = 'Oui';
             }
             if (doc.data().isComplete == false) {
-                valueToDisplay = 'Non'
+                valueToDisplay = 'Non';
             }
 
             displayDate += `

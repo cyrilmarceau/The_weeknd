@@ -1,18 +1,20 @@
 // Font awesome kit
 import './lib/fit.fontawesome.js'
+import './js/firebase/login.js'
+import './js/firebase/disconnect.js'
+import './js/animation/animationIndex.js'
+import './js/firebase/displayActuIndex.js'
+import './style/loader.css'
+import './style/menu.css';
+import './style/main.css'
+import './style/mediaQueries/indexMediaQueries.css';
 
-// Database
-import './js/firebase/database.js'
 
-import './js/firebase/uploadActus.js'
+document.querySelector('.aa').addEventListener('click', () => {
+    document.getElementById("sideNavigation").style.width = "270px";
+})
 
-// Add date to firebase
-import './js/firebase/addDate.js'
 
-// Edit date to firebase
-import './js/firebase/editDate.js'
-
-// Delete date to firebase
-import './js/firebase/deleteDate.js'
-
-import './style/admin.css'
+document.querySelector('.closebtn').addEventListener('click', () => {
+    document.getElementById("sideNavigation").style.width = "0";
+})

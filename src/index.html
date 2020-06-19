@@ -100,9 +100,13 @@
             <form id="form">
                 <input type="email" placeholder="Email" id="mail">
                 <input type="password" placeholder="Mot de passe" id="password">
-                <input type="button" class="btn-cancel-connexion" value="Annuler">
-                <input type="submit" value="Se connecter">
+                <div class="btn-admin">
+                    <input type="button" class="btn-cancel-connexion" value="Annuler">
+                    <input type="submit" value="Se connecter">
+                </div>
             </form>
+
+
 
         </div>
 
@@ -134,16 +138,16 @@
     <section id="album">
 
         <div class="ctnr-picture-link">
-            <div class="link">
+            <div class="link" id="reveal">
                 <a href="">Stream / Télécharger</a>
             </div>
             <div class="img-album">
-                <img class="lazy-load" src="./images/pageAccueil/pochette.jpg" alt="Pochette album the weeknd">
+                <img class="lazy-load" id="reveal" src="./images/pageAccueil/pochette.jpg" alt="Pochette album the weeknd">
             </div>
         </div>
 
         <div class="ctnr-explication-album">
-            <div class="explication-album">
+            <div class="explication-album" id="reveal">
                 <p>
                     Depuis des mois, <span>The Weeknd</span> plonge ses fans dans un <span>univers qu’il a créé de
                         toutes pièces</span>, au <span>côté sanglant et inquiétant</span>.
@@ -156,17 +160,17 @@
 
             <div class="ctnr-spotify-img">
                 <div class="spotify">
-                    <iframe src="https://open.spotify.com/embed/album/4yP0hdKOZPNshxUOjY0cZj" width="300" height="380"
+                    <iframe title="Spotify tracklist the weeknd" src="https://open.spotify.com/embed/album/4yP0hdKOZPNshxUOjY0cZj" width="300" height="380"
                         frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <div class="img-part-1">
-                    <img class="lazy-load" src="./images/pageAccueil/frizz_11.jpg" alt="The weeknd images">
+                    <img class="lazy-load" id="reveal" src="./images/pageAccueil/frizz_11.jpg" alt="The weeknd images">
                 </div>
             </div>
 
             <div class="ctnr-actu-img">
                 <div class="img-part-2">
-                    <img class="lazy-load" src="./images/pageAccueil/frizz_22.jpg" alt="The weeknd images">
+                    <img class="lazy-load" id="reveal" src="./images/pageAccueil/frizz_22.jpg" alt="The weeknd images">
                 </div>
 
                 <!-- <div class="ctnr-actu">

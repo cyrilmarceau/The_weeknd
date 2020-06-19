@@ -4,6 +4,7 @@
         url('../font/montserrat/subset-Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('../font/montserrat/subset-Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body{

@@ -41,8 +41,13 @@
     }
 
     .iframe{
-        top: 35%;
-        left: 17%;
+        top: 40%;
+        left: 4px;
+    }
+
+    .iframe i{
+        right: 15px;
+        top: -40px;
     }
 
 
@@ -101,7 +106,12 @@
 
     .iframe{
         top: 40%;
-        left: 9%;
+        left: 5%;
+    }
+
+    .iframe i{
+        right: 55px;
+        top: -40px;
     }
 
     /* Footer */
@@ -164,7 +174,12 @@
 
     .iframe{
         top: 28%;
-        left: 14%;
+        left: 4%;
+    }
+
+    .iframe i{
+        right: 75px;
+        top: -40px;
     }
 
     /* Footer */
@@ -210,11 +225,26 @@
     }
 
     .iframe{
-        left: 12%;
+        left: 5%;
     }
+
+    .iframe i{
+        right: 95px;
+        top: -40px;
+    }
+
 /* 
     .videoo{
         width: 756px;
         height: 238px;
     } */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1200px) {
+
+    .iframe i{
+        right: 37%;
+        top: -40px;
+    }
 }

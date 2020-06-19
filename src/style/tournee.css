@@ -4,6 +4,7 @@
         url('../font/montserrat/subset-Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('../font/montserrat/subset-Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -102,9 +104,15 @@ a.active{
 }
 
 #form input[type="button"], #form input[type="submit"]{
-    width: 60%;
+    width: 45%;
     background-color: black;
     color: white;
+    outline: none;
+}
+
+.btn-admin{
+    display: flex;
+    justify-content: space-between;
 }
 
 #form input:nth-child(4){
@@ -210,7 +218,7 @@ main{
 .row-class td{
     padding: 10px 0;
     width: 14.2%;
-    color: #dd453e;
+    color: white;
 }
 
 .row-class td:nth-child(1){

@@ -101,10 +101,17 @@ a.active{
 }
 
 #form input[type="button"], #form input[type="submit"]{
-    width: 60%;
+    width: 45%;
     background-color: black;
     color: white;
+    outline: none;
 }
+
+.btn-admin{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 #form input:nth-child(4){
     margin-bottom: 0;
@@ -243,6 +250,7 @@ main{
     top: 20%;
     left: 20%;
     z-index: 100;
+    width: 100%;
 }
 
 .iframe i{

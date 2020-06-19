@@ -7,9 +7,7 @@
     left: 0;
     z-index: 15;
 }
-section, header, footer{
-    display: none;
-}
+
 
  .frame {
    position: absolute;

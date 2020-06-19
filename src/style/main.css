@@ -4,6 +4,7 @@
         url('../font/montserrat/subset-Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('../font/montserrat/subset-Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body{
@@ -65,6 +67,17 @@ a.active{
     background: rgba(221, 69, 62, 0.3);
 }
 
+/* Animation image */
+#reveal{
+    opacity: 0;
+}
+
+#reveal.revealed{
+    opacity: 1;
+    transition: opacity 0.5s;
+    will-change: opacity;
+}
+
 /* Connection */
 
 .ctnr-admin-connection .bbb{
@@ -110,10 +123,15 @@ a.active{
 }
 
 #form input[type="button"], #form input[type="submit"]{
-    width: 60%;
+    width: 45%;
     background-color: black;
     color: white;
     outline: none;
+}
+
+.btn-admin{
+    display: flex;
+    justify-content: space-between;
 }
 
 ::placeholder{
@@ -240,7 +258,7 @@ header a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .link, .img-album{
@@ -249,8 +267,12 @@ header a:hover{
     justify-content: center;
 }
 
+.img-album img{
+    object-fit: cover;
+}
+
 .ctnr-picture-link a{
-    padding: 8px;
+    padding: 15px;
     background-color: #dd453e;
     text-transform: uppercase;
     border-radius: 4px;
@@ -265,17 +287,14 @@ header a:hover{
 
 .ctnr-explication-album{
     position: relative;
-    /* width: calc(57% - 60px); */
-    /* padding: 0 30px; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .explication-album{
     width: 50%;
     position: relative;
-    height: 150px;
+    /* height: 150px; */
     top: -50px;
     display: flex;
     justify-content: center;
@@ -328,7 +347,7 @@ header a:hover{
 
 .ctnr-actu{
     width: 30%;
-    height: 400px;
+    height: 30%;
     border: 1px solid white;
 }
 
@@ -364,12 +383,29 @@ header a:hover{
     margin: 0;
 }
 
+.actu-texte{
+    padding: 15px 0;
+}
+
 .actu-texte p{
-    color: white;
-    width: 90%;
+    margin: 0;
     text-align: left;
-    padding: 0 20px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.actu-texte article{
+    color: white;
+    width: calc(100% - 40px);
+    text-align: left;
+    padding: 20px;
     line-height: 2;
+}
+
+.actu-texte a{
+    padding-left: 20px;
+    color: white;
+    margin-bottom: 16px;
 }
 
 

@@ -5,9 +5,8 @@ import 'firebase/firebase-firestore';
 window.addEventListener('load', () => {
     const actusFirestore = firebase.firestore().collection('actus');
 
-    actusFirestore.orderBy('timestamp', 'desc').limit(1).get().then(function(querySnapshot){
+    actusFirestore.orderBy('timestamp', 'desc').limit(1).onSnapshot(function(querySnapshot){
         querySnapshot.forEach(function(doc) {
-            console.log(doc.data());
 
             const globalCtnr = document.querySelector('.ctnr-actu-img')
             const divCtnr = document.createElement('div');
@@ -21,35 +20,43 @@ window.addEventListener('load', () => {
 
             const img = document.createElement('img');
             const h3 = document.createElement('h3');
-            const p = document.createElement('p')
+            const article = document.createElement('article');
+            const date = document.createElement('p')
+            const link = document.createElement('a')
 
             divCtnr.classList.add('ctnr-actu');
+            // divCtnr.id = "reveal";
 
             divPictureTitle.classList.add('actu-picture-title');
 
             divActuPicture.classList.add('actu-picture');
             divActuTitle.classList.add('actu-title');
 
-            divActuText.classList.add('actu-texte')
+            divActuText.classList.add('actu-texte');
 
-            img.src = doc.data().photoUrl
-            h3.textContent = doc.data().titleActus
-            p.textContent = doc.data().textActus
+            img.src = doc.data().photoUrl;
+            img.alt = 'Dernières actualités de the weeknd';
+            h3.textContent = doc.data().titleActus;
+            article.textContent = doc.data().textActus;
+            date.textContent = doc.data().dateActus
+            link.href = './actus.html'
+            link.textContent = 'Voir toutes les actualités'
 
-            divActuPicture.appendChild(img)
-            divActuTitle.appendChild(h3)
-            divActuText.appendChild(p)
+            divActuPicture.appendChild(img);
+            divActuTitle.appendChild(h3);
+            divActuText.appendChild(date)
+            divActuText.appendChild(article);
+            divActuText.appendChild(link)
 
 
-            divPictureTitle.appendChild(divActuPicture)
-            divPictureTitle.appendChild(divActuTitle)
+            divPictureTitle.appendChild(divActuPicture);
+            divPictureTitle.appendChild(divActuTitle);
 
-            divCtnr.appendChild(divPictureTitle)
-            divCtnr.appendChild(divActuText)
+            divCtnr.appendChild(divPictureTitle);
+            divCtnr.appendChild(divActuText);
 
 
-            globalCtnr.appendChild(divCtnr)
-
+            globalCtnr.appendChild(divCtnr);
 
         })
     })

@@ -7,7 +7,7 @@ module.exports = {
     entry:
     {
         index: path.resolve(__dirname, '../src/index.js'),
-        page: path.resolve(__dirname, '../src/page.js'),
+        admin: path.resolve(__dirname, '../src/admin.js'),
         video: path.resolve(__dirname, '../src/video.js'),
         tournee: path.resolve(__dirname, '../src/tournee.js'),
         actus: path.resolve(__dirname, '../src/actus.js')
@@ -17,7 +17,7 @@ module.exports = {
         filename: '[id].[hash].js',
         path: path.resolve(__dirname, '../dist')
     },
-    devtool: 'source-map',
+    // devtool: 'source-map',
     plugins:
         [
             new CopyWebpackPlugin([{ from: path.resolve(__dirname, '../static') }]),
@@ -26,7 +26,7 @@ module.exports = {
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 template: path.resolve(__dirname, '../src/index.html'),
-                chunks: ['page'],
+                chunks: ['index'],
                 minify: true
             }),
 
@@ -58,7 +58,7 @@ module.exports = {
             new HtmlWebpackPlugin({
                 filename: 'admin.html',
                 template: path.resolve(__dirname, '../src/admin.html'),
-                chunks: ['index'],
+                chunks: ['admin'],
                 minify: false
             }),
 

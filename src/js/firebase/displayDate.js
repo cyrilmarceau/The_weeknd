@@ -35,19 +35,22 @@ window.addEventListener('load', () => {
                     </tr>
                 `
         })
-        formToAppend.innerHTML = displayDate;
-    })
 
-    setTimeout(() => {
-        const tr = document.querySelectorAll('tr[id="true"]')
+        formToAppend.innerHTML = displayDate;
+
+        // Select all element who is complet
+        const tr = document.querySelectorAll('tr[id="true"]');
         for (let i = 0; i < tr.length; i++) {
             const element = tr[i];
+
+            // Select td of element who is complet
             const elChildren = element.children;
 
             for (let j = 0; j < elChildren.length; j++) {
                 const element = elChildren[j];
-                console.log(element);
-                element.style.color = 'white'
+                element.style.color = '#dd453e';
+
+                // Find element who get class through and line-through it
                 if (element.className == 'through') {
                     element.style.textDecoration = 'line-through';
                 }
@@ -55,8 +58,14 @@ window.addEventListener('load', () => {
             }
         }
 
+    })
 
-    }, 2000);
+
+
+
+
+
+
 
 
 })

@@ -43,8 +43,6 @@ window.addEventListener('load', () => {
         element.addEventListener('click', () => {
             element.parentNode.parentNode.nextSibling.style.display = 'block'
 
-
-
             if (element.parentNode.parentNode.nextSibling.classList[1] == 'iframe-1') {
                 createIframe('https://www.youtube.com/embed/dqRZDebPIGs', 'videoo', document.querySelector('.iframe-1'))
             }
@@ -66,19 +64,24 @@ window.addEventListener('load', () => {
                 document.querySelector('.videoo').style.height = '568px'
             }
             if (window.innerWidth >= 992 && window.innerWidth <= 1199.98) {
-                document.querySelector('.videoo').style.width = '756px'
+                document.querySelector('.videoo').style.width = '90%'
                 document.querySelector('.videoo').style.height = '468px'
             }
             if (window.innerWidth >= 768 && window.innerWidth <= 991.98) {
-                document.querySelector('.videoo').style.width = '556px'
-                document.querySelector('.videoo').style.height = '368px'
+                document.querySelector('.videoo').style.width = '90%'
+                document.querySelector('.videoo').style.height = '408px'
             }
             if (window.innerWidth >= 576 && window.innerWidth <= 767.98) {
-                document.querySelector('.videoo').style.width = '456px'
+                document.querySelector('.videoo').style.width = '90%'
+                document.querySelector('.videoo').style.height = '308px'
+            }
+
+            if (window.innerWidth >= 450 && window.innerWidth <= 575.98) {
+                document.querySelector('.videoo').style.width = '80%'
                 document.querySelector('.videoo').style.height = '268px'
             }
-            if (window.innerWidth >= 0 && window.innerWidth <= 575.98) {
-                document.querySelector('.videoo').style.width = '356px'
+            if (window.innerWidth >= 0 && window.innerWidth <= 450) {
+                document.querySelector('.videoo').style.width = '95%'
                 document.querySelector('.videoo').style.height = '268px'
             }
 

@@ -10,11 +10,11 @@ window.addEventListener('load', () => {
         querySnapshot.forEach((doc) => {
 
             // Get id who is clicked
-            const elClicked = document.querySelector(`.fai-delete${doc.id}`)
+            const elClicked = document.querySelector(`.fai-delete${doc.id}`);
 
             elClicked.addEventListener('click', (event) => {
-                event.preventDefault()
-                console.log(doc.data())
+                event.preventDefault();
+
 
                 // Delete element on firebase
                 dateFirestore.doc(doc.id).delete().then(function () {

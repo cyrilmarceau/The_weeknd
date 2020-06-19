@@ -9,7 +9,7 @@ gsap.registerPlugin(CSSPlugin)
 
 window.addEventListener('load', () => {
 
-    const globalCtnr = document.querySelector('.ctnr-admin-connection')
+    const globalCtnr = document.querySelector('.ctnr-admin-connection');
 
 
     firebase.auth().onAuthStateChanged(function (user) {
@@ -18,26 +18,28 @@ window.addEventListener('load', () => {
 
         if (currentUserConnected != null) {
 
-            const faiIconDisconnect = document.querySelector('.ctnr-admin-connection .bbb')
-            const faiIconConexion = document.querySelector('.ctnr-admin-connection .aaa')
-            const menuA = document.querySelectorAll('a')[3]
-            const ctnrConexion = document.querySelector('.ctnr-conexion').lastChild
-            const header = document.querySelector('header')
+            const faiIconDisconnect = document.querySelector('.ctnr-admin-connection .bbb');
+            const faiIconConexion = document.querySelector('.ctnr-admin-connection .aaa');
+            const menuA = document.querySelectorAll('a')[4];
+            const ctnrConexion = document.querySelector('.ctnr-conexion').lastChild;
+            const header = document.querySelector('header');
 
             faiIconDisconnect.addEventListener('click', () => {
 
                 firebase.auth().signOut().then(function () {
-                    console.log('deconexion');
+
+                    // Delete tag a in menu
                     menuA.remove()
-                    // globalCtnr.style.left = ""
-                    TweenLite.to(globalCtnr, .5, {css: {left: "",top: 150, right: 0, width: 40}})
-                    faiIconDisconnect.style.display = 'none'
-                    faiIconConexion.style.display = 'flex'
-                    ctnrConexion.remove()
-                    header.appendChild(globalCtnr)
+
+                    //Display block on right side
+                    TweenLite.to(globalCtnr, .5, {css: {position: 'absolute', left: "",top: 150, right: 0, width: 40}});
+                    faiIconDisconnect.style.display = 'none';
+                    faiIconConexion.style.display = 'flex';
+                    ctnrConexion.remove();
+                    header.appendChild(globalCtnr);
 
                 }).catch(function (error) {
-                    // An error happened.
+                    console.log(error)
                 });
 
             })

@@ -84,8 +84,17 @@
         align-items: center;
     }
 
+    .image{
+        width: 100%;
+        height: auto;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
     .img-part-1, .img-part-2{
-        position: initial;
+        display: none;
     }
 
     .ctnr-actu{
@@ -144,6 +153,7 @@
     .ctnr-pres-artist{
         flex-direction: column;
     }
+
     .image{
         width: 100%;
         height: auto;

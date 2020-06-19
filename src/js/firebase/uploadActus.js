@@ -20,12 +20,12 @@ window.addEventListener('load', () => {
 
     // Must title is display for unlock file input
     document.querySelector('#actus-title').addEventListener('keyup', () => {
-        document.querySelector('#actus-picture').removeAttribute('disabled')
+        document.querySelector('#actus-picture').removeAttribute('disabled');
     })
 
     function onSelectFile(event) {
 
-        const file = event.target.files[0]
+        const file = event.target.files[0];
         const storageRef = firebase.storage().ref();
 
         // Upload picture
@@ -46,49 +46,49 @@ window.addEventListener('load', () => {
             console.log('File uploaded!');
 
             // Select form
-            const form = document.querySelector('#add-actus')
-            const cancelBtn = document.querySelector('#actus-cencel')
+            const form = document.querySelector('#add-actus');
+            const cancelBtn = document.querySelector('#actus-cencel');
 
             // Remove disabled when picture is upload
-            document.querySelector('#actus-submit').removeAttribute('disabled')
+            document.querySelector('#actus-submit').removeAttribute('disabled');
 
             form.addEventListener('submit', (e) => {
-                e.preventDefault()
+                e.preventDefault();
 
                 const err = []
-                const ActusDateValue = document.querySelector('#actus-date').value
-                const ActusTitleValue = document.querySelector('#actus-title').value
-                const ActusTexteValue = document.querySelector('#actus-text').value
-                const ActusPictureValue = document.querySelector('#actus-picture')
+                const ActusDateValue = document.querySelector('#actus-date').value;
+                const ActusTitleValue = document.querySelector('#actus-title').value;
+                const ActusTexteValue = document.querySelector('#actus-text').value;
+                const ActusPictureValue = document.querySelector('#actus-picture');
 
-                const ActusDate = document.querySelector('#actus-date')
-                const ActusTitle = document.querySelector('#actus-title')
-                const ActusTexte = document.querySelector('#actus-text')
-                const ActusPicture = document.querySelector('#actus-picture')
+                const ActusDate = document.querySelector('#actus-date');
+                const ActusTitle = document.querySelector('#actus-title');
+                const ActusTexte = document.querySelector('#actus-text');
+                const ActusPicture = document.querySelector('#actus-picture');
 
                 // Verify input
                 if (ActusDateValue == '') {
-                    ActusDate.style.border = '1px solid red'
-                    ActusDate.placeholder = 'Veuillez remplir ce champ'
-                    err.push('date vide')
+                    ActusDate.style.border = '1px solid red';
+                    ActusDate.placeholder = 'Veuillez remplir ce champ';
+                    err.push('date vide');
                 } else {
-                    ActusDate.style.border = '1px solid black'
+                    ActusDate.style.border = '1px solid black';
                 }
 
                 if (ActusTitleValue.length <= 0) {
-                    ActusTitle.style.border = '1px solid red'
-                    ActusTitle.placeholder = 'Veuillez remplir ce champ'
+                    ActusTitle.style.border = '1px solid red';
+                    ActusTitle.placeholder = 'Veuillez remplir ce champ';
                     err.push(ActusTitleValue)
                 } else {
-                    ActusTitle.style.border = '1px solid black'
+                    ActusTitle.style.border = '1px solid black';
                 }
 
                 if (ActusTexteValue.length <= 0) {
-                    ActusTexte.style.border = '1px solid red'
-                    ActusTexte.placeholder = 'Veuillez remplir ce champ'
-                    err.push(ActusTexteValue)
+                    ActusTexte.style.border = '1px solid red';
+                    ActusTexte.placeholder = 'Veuillez remplir ce champ';
+                    err.push(ActusTexteValue);
                 } else {
-                    ActusTexte.style.border = '1px solid black'
+                    ActusTexte.style.border = '1px solid black';
                 }
 
                 if (err.length === 0) {
@@ -136,7 +136,7 @@ window.addEventListener('load', () => {
     }
 
     // Select input
-    const file = document.querySelector('#actus-picture')
-    file.addEventListener('change', onSelectFile)
+    const file = document.querySelector('#actus-picture');
+    file.addEventListener('change', onSelectFile);
 
 }) 

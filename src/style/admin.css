@@ -34,7 +34,7 @@ h1{
 }
 
 /* Section */
-#crud{
+#crud, #actus{
     width: 100%;
     height: 100vh;
     margin-bottom: 100px;
@@ -98,7 +98,7 @@ input[type="text"]{
     max-height: 80vh;
 }
 
-#ctnr-date{
+#ctnr-date,  #ctnr-actus{
     width: 100%;
 }
 
@@ -113,7 +113,7 @@ table{
     color: #566787
 }
 
-#ctnr-date th{
+#ctnr-date th,  #ctnr-actus th{
     text-align: left;
     border-bottom: 2px solid #566787;
     border-collapse: separate;
@@ -121,6 +121,10 @@ table{
     padding: 10px 0;
     font-family: Montserrat;
     font-weight: bold;
+}
+
+#ctnr-actus th{
+    width: 16.6%
 }
 
 .row-class{
@@ -158,7 +162,8 @@ table{
 /* Add date */
 
 /* Global ctnr add date */
-.add-date, .edit-date{
+.add-date, .edit-date,
+.add-actus, .edit-actus{
     width: 100%;
     display: none;
     flex-direction: column;
@@ -168,7 +173,8 @@ table{
 }
 
 /* Form add date */
-#add-date, #edit-date{
+#add-date, #edit-date,
+#add-actus, #edit-actus{
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -231,7 +237,7 @@ label{
 }
 
 /* Div footer add dates */
-.btn-send-back-form{
+.btn-send-back-form, .btn-send-back-form-actus{
     background-color: #ecf0f1;
     width: 100%;
     height: 70px;
@@ -258,8 +264,49 @@ label{
 }
 
 
+/* Actus */
 
+#edit-actus .ctnr-actus-1{
+    margin-bottom: 0;
+}
 
+#edit-actus .ctnr-actus-1 + div{
+    margin-top: 0;
+}
+
+.add-actus, .edit-actus{
+    top: 900px;
+}
+
+#ctnr-datas-firebase .row-class p{
+    height: 100px;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+#ctnr-datas-firebase td{
+    width: 16.6%;
+}
+
+#ctnr-datas-firebase td:nth-child(3){
+    width: 40%;
+}
+
+#ctnr-datas-firebase td:nth-child(4){
+    width: 200px;
+    max-width: 200px;
+}
+
+#ctnr-actus th:nth-child(5), #ctnr-actus th:nth-child(6), #ctnr-actus .edit, #ctnr-actus .delete{
+    text-align: center;
+}
+
+#edit-actus textarea{
+    height:100px;
+    border: 1px solid black;
+}
+
+/* 
 #actus .ctnr-add-actus{
     flex-direction: column;
     background-color: white;
@@ -267,7 +314,6 @@ label{
 
 .ctnr-add-actus{
     width: 80%;
-    /* height: 800px; */
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -285,4 +331,4 @@ label{
 #add-actus input, #add-actus textarea{
     margin: 10px 0px;
     border-radius: 3px;
-}
+} */

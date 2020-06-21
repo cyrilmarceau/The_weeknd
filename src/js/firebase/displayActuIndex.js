@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     actusFirestore.orderBy('timestamp', 'desc').limit(1).onSnapshot(function(querySnapshot){
         querySnapshot.forEach(function(doc) {
 
-            const globalCtnr = document.querySelector('.ctnr-actu-img')
+            const globalCtnr = document.querySelector('.ctnr-img')
             const divCtnr = document.createElement('div');
 
             const divPictureTitle = document.createElement('div');

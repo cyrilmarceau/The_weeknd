@@ -187,7 +187,7 @@ header a:hover{
 /* Affiche */
 .affiche{
     height: 100vh;
-    background-image: url(../images/pageTournee/tour1.jpg);
+    background-image: url(../images/pageTournee/tour2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -231,6 +231,17 @@ main{
     color: white;
 }
 
+.row-class td a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(221, 69, 62);
+    padding: 5px 8px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+
 .row-class td:nth-child(1){
     width: 20%;
 }
@@ -246,6 +257,11 @@ main{
 }
 .row-class td:nth-child(5){
     width: 10%;
+}
+
+.row-class td:nth-child(6){
+    display: flex;
+    justify-content: center;
 }
 
 

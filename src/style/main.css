@@ -250,9 +250,13 @@ header a:hover{
 .pres-artist article{
     line-height: 2.5;
     color: white;
-    color: #dd453e;
     margin: 0;
     text-align: center;
+    font-size: 18px;
+}
+
+.pres-artist .red{
+    color: #dd453e;
 }
 
 #album{
@@ -284,7 +288,7 @@ header a:hover{
     object-fit: cover;
 }
 
-.ctnr-picture-link a{
+.ctnr-picture-link a, .pres-artist a{
     padding: 15px;
     background-color: #dd453e;
     text-transform: uppercase;
@@ -294,6 +298,10 @@ header a:hover{
     /* width: 255px; */
     margin-bottom: 35px;
     color: white;
+}
+
+.pres-artist a{
+    margin-top: 100px;
 }
 
 .ctnr-picture-link img{
@@ -316,17 +324,18 @@ header a:hover{
 }
 
 .explication-album p{
-    color: white;
+    color: #dd453e;
     text-align: center;
     width: 100%;
 }
 
 .explication-album span{
-    color: #dd453e;
+    color: white;
 }
 
 .ctnr-spotify-img{
     display: flex;
+    margin-bottom: 450px;
 }
 
 .spotify{
@@ -352,8 +361,23 @@ header a:hover{
     justify-content: center;
 }
 
+.ctnr-img{
+    width: 70%;
+    position: relative;
+}
+
+.img-part-1{
+    margin-top: 50px;
+}
+
+.img-1{
+    position: absolute;
+    right: 0;
+}
+
 .img-part-2{
     top: -300px;
+    display: none;
 }
 
 .ctnr-actu-img{
@@ -361,8 +385,11 @@ header a:hover{
 }
 
 .ctnr-actu{
-    width: 30%;
-    height: 30%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* height: 30%; */
     border: 1px solid white;
 }
 
@@ -390,7 +417,7 @@ header a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255,255,255,0.4);
     padding: 0 25px;
 }
 
@@ -408,6 +435,7 @@ header a:hover{
 
 .actu-texte{
     padding: 15px 0;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .actu-texte p{

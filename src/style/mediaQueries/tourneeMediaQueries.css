@@ -45,6 +45,9 @@
         width: 20%;
     }
 
+    .row-class td a{
+        font-size: 9px;
+    }
 
     /* Footer */
 
@@ -95,6 +98,9 @@
         font-size: 12px;
     }
 
+    .row-class td a{
+        font-size: 10px;
+    }
 
     /* Footer */
 

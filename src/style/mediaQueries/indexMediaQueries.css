@@ -98,16 +98,47 @@
         display: none;
     }
 
-    .ctnr-actu{
+    .img-part-1{
+        margin-top: 50px;
         width: 80%;
-        margin: 40px auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .ctnr-img{
+        width: 100%;
+    }
+
+    .ctnr-spotify-img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 850px;
+    }
+
+    .ctnr-actu{
+        width: 100%;
     }
 
     .actu-picture img{
         object-position: -15px;
     }
 
+    .actu-title{
+        padding: 0 15px;
+    }
+
+    .actu-title h3{
+        font-size: 15px;
+    }
+
     article{
+        font-size: 14px;
+    }
+
+    .pres-artist a{
+        margin-top: 25px;
         font-size: 14px;
     }
 
@@ -213,25 +244,51 @@
         height: auto;
     }
 
-    .ctnr-spotify-img{
-        flex-direction: column;
-        align-items: center;
+    .ctnr-img{
+        width: 100%;
     }
+
+    .ctnr-spotify-img{
+        margin-bottom: 850px;
+    }
+
 
     .img-part-1, .img-part-2{
         display: none;
     }
 
-    .ctnr-actu{
-        width: 80%;
-        margin: 40px auto;
+    .img-part-1{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+        width: 70%;
     }
 
-    .actu-picture img{
-        object-position: -15px;
+    .ctnr-spotify-img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctnr-actu{
+        width: 100%;
     }
 
     article{
+        font-size: 15px;
+    }
+
+    .actu-title{
+        padding: 0 20px;
+    }
+
+    .actu-title h3{
+        font-size: 16px;
+    }
+
+    .pres-artist a{
+        margin-top: 50px;
         font-size: 15px;
     }
 
@@ -287,6 +344,10 @@
         line-height: 1.5;
     }
 
+    .pres-artist span{
+        display: none;
+    }
+
     .ctnr-picture-link a{
         font-size: 15px;
     }
@@ -297,14 +358,21 @@
     
     .explication-album{
         top: -80px;
+        width: 80%;
     }
 
     .ctnr-explication-album p{
         width: 80%;
     }
 
-    .img-part-1, .img-part-2{
+    /* .img-part-1, .img-part-2{
         display: none;
+    } */
+
+    .img-part-1{
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .ctnr-spotify-img{
@@ -313,13 +381,13 @@
     }
 
     .ctnr-actu{
-        width: 45%;
+        width: 90%;
     }
-
+/* 
     .ctnr-actu-img{
         display: flex;
         justify-content: center;
-    }
+    } */
 
     /* Footer */
     .ctnr-social-media h2, .menu-desktop h1 {

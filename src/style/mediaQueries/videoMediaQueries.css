@@ -41,12 +41,14 @@
     }
 
     .iframe{
-        top: 40%;
-        left: 4px;
+        top: 18%;
+        left: 0px;
+        margin-left: 10%;
     }
 
+
     .iframe i{
-        right: 15px;
+        right: 105px;
         top: -40px;
     }
 

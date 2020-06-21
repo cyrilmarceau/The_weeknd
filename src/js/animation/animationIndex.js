@@ -83,6 +83,11 @@ window.addEventListener('load', () => {
         observer.observe(r);
     })
 
-    document.querySelector('.spotify iframe').style.width = '400px'
+
+    if (window.innerWidth < 991.98 && window.innerWidth > 768) {
+        document.querySelector('.spotify iframe').style.width = '300px'
+    } else {
+        document.querySelector('.spotify iframe').style.width = '400px'
+    }
 })
 

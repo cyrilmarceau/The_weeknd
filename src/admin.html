@@ -40,6 +40,7 @@
 </head>
 
 <body>
+
     <section id="crud">
 
         <div class="ctnr-array-crud">
@@ -125,6 +126,8 @@
         </form>
     </div>
 
+
+
     <div class="edit edit-date">
 
         <form id="edit-date">
@@ -155,41 +158,158 @@
 
     </div>
 
-    <section id="actus">
-        <div class="ctnr-add-actus">
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="actus">
+
+        <div class="ctnr-array-crud">
+
+            <!-- Title -->
             <div class="title-add-date">
                 <h1>Gérer les actualités de the weeknd</h1>
                 <div class="button">
+                    <input type="button" value="Ajouter une actualité" class="display-form-add-actus">
                     <a href="./index.html">Revenir</a>
                 </div>
 
             </div>
 
-            <form id="add-actus">
+            <div class="test">
+                <table id="ctnr-actus">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Titre</th>
+                            <th>Article</th>
+                            <th>Photo</th>
+                            <th>Editer</th>
+                            <th>Supprimer</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ctnr-datas-firebase"></tbody>
+                </table>
+            </div>
 
-                <div class="title-form">
-                    <h3>Ajouter une actus</h3>
-                </div>
-
-                <div class="ctnr">
-                    <input type="text" placeholder="Date de l'actualité" class="flatpickr-actus" id="actus-date">
-                    <input type="text" placeholder="Titre de l'actualité" id="actus-title">
-                    <textarea cols="30" rows="10" id="actus-text" placeholder="Texte de l'actualité"></textarea>
-                    <input type="file" id="actus-picture" disabled>
-                </div>
-
-                <div class="ctnr btn-send-back-form">
-                    <div class="submit-cancel ctnr-6">
-                        <!-- <input type="button" value="Annuler" id="actus-cancel"> -->
-                        <input type="submit" value="Envoyer" id="actus-submit" disabled>
-                    </div>
-                </div>
-
-            </form>
         </div>
+
     </section>
+
+
+    <div class="add-actus">
+
+        <form id="add-actus">
+
+            <div class="title-form">
+                <h3>Ajouter une actus</h3>
+            </div>
+
+
+            <div class="ctnr">
+                <label for="date">Date de l'actualité</label>
+                <input type="text" placeholder="Date de l'actualité" class="flatpickr-actus" id="actus-date">
+            </div>
+
+            <div class="ctnr">
+                <label for="city">Titre de l'actualité</label>
+                <input type="text" placeholder="Titre de l'actualité" id="actus-title">
+            </div>
+
+            <div class="ctnr">
+                <label for="country">Texte de l'actualité</label>
+                <textarea cols="30" rows="10" id="actus-text" placeholder="Texte de l'actualité"></textarea>
+            </div>
+
+            <div class="ctnr">
+                <label for="festival">Photo de l'actualité</label>
+                <input type="file" id="actus-picture" disabled>
+            </div>
+
+            <div class="ctnr btn-send-back-form">
+                <div class="submit-cancel">
+                    <input type="button" class="back-actus" value="Annuler">
+                    <input type="submit" value="Ajouter actus" id="actus-submit" disabled>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+    <div class="edit edit-actus">
+
+        <form id="edit-actus">
+
+            <div class="title-form">
+                <h3>Modifier les actualités de the weeknd</h3>
+            </div>
+
+            <div class="ctnr ctnr-actus-1"></div>
+            <div class="ctnr">
+                <input type="text" name="" class="flatpickreee date-actus-edit" placeholder="01/01/2021" readonly>
+            </div>
+
+            <div class="ctnr ctnr-actus-2"></div>
+            <div class="ctnr ctnr-actus-3"></div>
+            <div class="ctnr ctnr-actus-4"></div>
+
+
+            <div class="ctnr btn-send-back-form-actus">
+                <div class="submit-cancel ctnr-actus-6"></div>
+            </div>
+
+        </form>
+
+    </div>
 
 </body>
 
 </html>
+
+
+
+<!-- <div class="ctnr-add-actus">
+
+    <div class="title-add-date">
+        <h1>Gérer les actualités de the weeknd</h1>
+        <div class="button">
+            <a href="./index.html">Revenir</a>
+        </div>
+
+    </div>
+
+    <form id="add-actus">
+
+        <div class="title-form">
+            <h3>Ajouter une actus</h3>
+        </div>
+
+        <div class="ctnr">
+            <input type="text" placeholder="Date de l'actualité" class="flatpickr-actus" id="actus-date">
+            <input type="text" placeholder="Titre de l'actualité" id="actus-title">
+            <textarea cols="30" rows="10" id="actus-text" placeholder="Texte de l'actualité"></textarea>
+            <input type="file" id="actus-picture" disabled>
+        </div>
+
+        <div class="ctnr btn-send-back-form">
+            <div class="submit-cancel ctnr-6">
+                <input type="button" value="Annuler" id="actus-cancel">
+<input type="submit" value="Envoyer" id="actus-submit" disabled>
+</div>
+</div>
+
+</form>
+</div> -->

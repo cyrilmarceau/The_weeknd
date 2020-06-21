@@ -15,15 +15,12 @@ window.addEventListener('load', () => {
 
         let displayDate = '';
         let valueToDisplay = '';
+
         querySnapshot.forEach(function (doc) {
 
+            if (doc.data().isComplete == true) valueToDisplay = 'Complet';
 
-            if (doc.data().isComplete == true) {
-                valueToDisplay = 'Complet';
-            }
-            if (doc.data().isComplete == false) {
-                valueToDisplay = '';
-            }
+            if (doc.data().isComplete == false) valueToDisplay = '';
 
             displayDate += `
                     <tr id=${doc.data().isComplete} class="row-class">
@@ -32,6 +29,7 @@ window.addEventListener('load', () => {
                         <td class="through"> ${doc.data().countryName} </td>
                         <td class="through"> ${doc.data().placeFestivalName}  </td>
                         <td> ${valueToDisplay} </td>
+                        <td> <a class='billet-tour' href="https://www.digitick.com/tr/event/the-weeknd/accorhotels-arena/6897867">Billet</a></td>
                     </tr>
                 `
         })
@@ -48,24 +46,17 @@ window.addEventListener('load', () => {
 
             for (let j = 0; j < elChildren.length; j++) {
                 const element = elChildren[j];
-                element.style.color = '#dd453e';
+                if (element.lastChild.className == 'billet-tour') {
+                    element.lastChild.remove()
+                    element.style.color = '#dd453e';
+                }
 
                 // Find element who get class through and line-through it
-                if (element.className == 'through') {
-                    element.style.textDecoration = 'line-through';
-                }
+                if (element.className == 'through') element.style.textDecoration = 'line-through';
 
             }
         }
 
     })
-
-
-
-
-
-
-
-
 
 })

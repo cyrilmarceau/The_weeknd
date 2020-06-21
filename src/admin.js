@@ -20,7 +20,7 @@ import './js/firebase/deleteDate.js'
 import './js/firebase/addActus.js'
 
 // display actus firebase
-import './js/firebase/displayActus.js'
+// import './js/firebase/displayActus.js'
 
 // edit actus firebase
 import './js/firebase/editActus.js'

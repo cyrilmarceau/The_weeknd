@@ -46,9 +46,9 @@ window.addEventListener('load', () => {
 
             for (let j = 0; j < elChildren.length; j++) {
                 const element = elChildren[j];
+                element.style.color = '#dd453e';
                 if (element.lastChild.className == 'billet-tour') {
-                    element.lastChild.remove()
-                    element.style.color = '#dd453e';
+                    element.lastChild.remove();
                 }
 
                 // Find element who get class through and line-through it

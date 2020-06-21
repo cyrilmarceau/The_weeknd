@@ -115,6 +115,8 @@ window.addEventListener('load', () => {
                         timestamp: Date.now()
                     });
                     form.reset()
+                    ctnrForm.style.display = 'none'
+                    crud.style.filter = "brightness(1)";
 
                     storageRef.listAll().then(function (res) {
                         res.items.forEach(async function (itemRef) {

@@ -14,3 +14,6 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
+Site événementielle afin de promouvoir le dernier album de the weeknd avec interface administrateur afin de gérer les dates et les actualités de The Weeknd.
+
+[Démo](marceau-cyril.com/lab_201) du site.
